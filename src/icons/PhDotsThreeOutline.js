@@ -15,26 +15,32 @@ const PhDotsThreeOutline = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : undefined}
     >
-      <slot />
-      ${weight === "bold" && svg`<circle cx="128" cy="128" r="20" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+      <slot></slot>
+      ${weight === "bold" &&
+      svg`<circle cx="128" cy="128" r="20" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <circle cx="208" cy="128" r="20" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <circle cx="48" cy="128" r="20" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}
-      ${weight === "duotone" && svg`<circle cx="128" cy="128" r="24" opacity="0.1"/>
+      ${weight === "duotone" &&
+      svg`<circle cx="128" cy="128" r="24" opacity="0.1"/>
   <circle cx="48" cy="128" r="24" opacity="0.1"/>
   <circle cx="208" cy="128" r="24" opacity="0.1"/>
   <circle cx="128" cy="128" r="24" fill="none" stroke="${color}" stroke-miterlimit="10" stroke-width="16"/>
   <circle cx="48" cy="128" r="24" fill="none" stroke="${color}" stroke-miterlimit="10" stroke-width="16"/>
   <circle cx="208" cy="128" r="24" fill="none" stroke="${color}" stroke-miterlimit="10" stroke-width="16"/>`}
-      ${weight === "fill" && svg`<circle cx="128" cy="128" r="32"/>
+      ${weight === "fill" &&
+      svg`<circle cx="128" cy="128" r="32"/>
   <circle cx="48" cy="128" r="32"/>
   <circle cx="208" cy="128" r="32"/>`}
-      ${weight === "light" && svg`<circle cx="128" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+      ${weight === "light" &&
+      svg`<circle cx="128" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <circle cx="48" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <circle cx="208" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>`}
-      ${weight === "thin" && svg`<circle cx="128" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      ${weight === "thin" &&
+      svg`<circle cx="128" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <circle cx="48" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <circle cx="208" cy="128" r="24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>`}
-      ${weight === "regular" && svg`<circle cx="128" cy="128" r="24" fill="none" stroke="${color}" stroke-miterlimit="10" stroke-width="16"/>
+      ${weight === "regular" &&
+      svg`<circle cx="128" cy="128" r="24" fill="none" stroke="${color}" stroke-miterlimit="10" stroke-width="16"/>
   <circle cx="48" cy="128" r="24" fill="none" stroke="${color}" stroke-miterlimit="10" stroke-width="16"/>
   <circle cx="208" cy="128" r="24" fill="none" stroke="${color}" stroke-miterlimit="10" stroke-width="16"/>`}
     </svg>

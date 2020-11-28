@@ -91,7 +91,7 @@ const Ph${name} = {
       viewBox="0 0 256 256"
       transform=\${mirrored ? "scale(-1, 1)" : undefined}
     >
-      <slot />
+      <slot></slot>
 `;
 
     if (!checkFiles(icon)) {

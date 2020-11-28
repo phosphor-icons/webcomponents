@@ -15,13 +15,19 @@ const PhMinus = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : undefined}
     >
-      <slot />
-      ${weight === "bold" && svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}
-      ${weight === "duotone" && svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`}
-      ${weight === "fill" && svg`<path d="M216,136H40a8,8,0,0,1,0-16H216a8,8,0,0,1,0,16Z"/>`}
-      ${weight === "light" && svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>`}
-      ${weight === "thin" && svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>`}
-      ${weight === "regular" && svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`}
+      <slot></slot>
+      ${weight === "bold" &&
+      svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}
+      ${weight === "duotone" &&
+      svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`}
+      ${weight === "fill" &&
+      svg`<path d="M216,136H40a8,8,0,0,1,0-16H216a8,8,0,0,1,0,16Z"/>`}
+      ${weight === "light" &&
+      svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>`}
+      ${weight === "thin" &&
+      svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>`}
+      ${weight === "regular" &&
+      svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`}
     </svg>
   `,
 };
