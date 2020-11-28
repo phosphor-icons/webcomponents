@@ -1,0 +1,22 @@
+{
+  "name": "phosphor-webcomponents",
+  "version": "1.0.0",
+  "description": "A flexible icon family for the web",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel example/index.html",
+    "assemble": "node bin/assemble.js",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rektdeckard",
+  "license": "MIT",
+  "dependencies": {
+    "hybrids": "^4.3.3"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1"
+  }
+}
