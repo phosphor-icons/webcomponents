@@ -4,10 +4,11 @@
   "description": "A flexible icon family for the web",
   "main": "index.js",
   "scripts": {
-    "start": "parcel example/index.html",
     "assemble": "node bin/assemble.js",
+    "start": "parcel example/index.html",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.js"
   },
   "author": "rektdeckard",
   "license": "MIT",

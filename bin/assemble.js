@@ -89,7 +89,7 @@ const Ph${name} = {
       height="\${size}"
       fill="\${color}"
       viewBox="0 0 256 256"
-      transform=\${mirrored ? "scale(-1, 1)" : undefined}
+      transform=\${mirrored ? "scale(-1, 1)" : null}
     >
       <slot></slot>
 `;
