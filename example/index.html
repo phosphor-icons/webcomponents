@@ -11,20 +11,90 @@
     />
     <meta name="author" content="Tobias Fried" />
     <script async src="../src/index.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0 16px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: gainsboro;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+
+      .row {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        padding: 8px 0;
+      }
+
+      .name {
+        text-align: start;
+        width: 240px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Phosphor Webcomponents</h1>
-    <div>
-      <ph-finn-the-human id="finn" color="gray" size="96" weight="duotone"></ph-finn-the-human>
-      <ph-sword color="cornflowerblue" size="96" weight="duotone"></ph-sword>
-      <ph-reddit-logo color="darkorange" size="96" weight="duotone"></ph-reddit-logo>
+    <h1 class="row">Phosphor Webcomponents</h1>
+    <div class="row">
+      <ph-finn-the-human
+        id="finn"
+        color="gray"
+        size="96"
+        weight="duotone"
+      >
+        <animate
+          xlink:href="#cool_shape"
+          attributeName="opacity"
+          values="0;1;0"
+          dur="4s"
+          repeatCount="indefinite"
+        ></animate>
+        <animateTransform
+          xlink:href="#cool_shape"
+          attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          dur="5s"
+          from="0 0 0"
+          to="360 0 0"
+          repeatCount="indefinite"
+        ></animateTransform>
+      </ph-finn-the-human>
+      <ph-sword color="cornflowerblue" size="96" weight="duotone" mirrored></ph-sword>
+      <ph-reddit-logo
+        color="orangered"
+        size="96"
+        weight="duotone"
+      ></ph-reddit-logo>
     </div>
-    <div>
-      <ph-horse id="finn" color="gray" size="96" weight="duotone"></ph-horse>
-      <ph-heart color="cornflowerblue" size="96" weight="duotone"></ph-heart>
-      <ph-cube color="darkorange" size="96" weight="duotone"></ph-cube>
+    <div class="row">
+      <ph-horse size="96" weight="light"></ph-horse>
+      <ph-heart size="96" weight="light"></ph-heart>
+      <ph-cube size="96" weight="light"></ph-cube>
     </div>
-    <div style="color: crimson">
+    <div class="row">
+      <ph-calculator
+        color="gray"
+        size="96"
+        weight="fill"
+      ></ph-calculator>
+      <ph-calendar color="cornflowerblue" size="96" weight="fill"></ph-calendar>
+      <ph-eyedropper
+        color="orangered"
+        size="96"
+        weight="fill"
+      ></ph-eyedropper>
+    </div>
+    <div class="row" style="color: cornflowerblue">
       <ph-horse onclick="test(event)" size="48"></ph-horse>
       <ph-heart size="48" weight="fill"></ph-heart>
       <ph-cube size="48"></ph-cube>
