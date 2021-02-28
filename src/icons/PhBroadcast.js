@@ -15,7 +15,6 @@ const PhBroadcast = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<circle cx="128" cy="128" r="32" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M77.08831,178.91169a71.93858,71.93858,0,0,1,0-101.82338" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

@@ -15,7 +15,6 @@ const PhSword = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<polyline points="72.201 128.201 152.201 40.201 216 40 215.799 103.799 127.799 183.799" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="100" y1="156" x2="160" y2="96" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

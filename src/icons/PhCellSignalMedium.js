@@ -15,7 +15,6 @@ const PhCellSignalMedium = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M200,43.31371V208a8,8,0,0,1-8,8H27.31371a8,8,0,0,1-5.65686-13.65685l164.6863-164.6863A8,8,0,0,1,200,43.31371Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="120" y1="104" x2="120" y2="216" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}

@@ -15,7 +15,6 @@ const PhMediumLogo = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="24.03516" y1="48.00094" x2="40.03516" y2="48.00094" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="120.03516" y1="48.00094" x2="136.03516" y2="48.00094" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

@@ -15,7 +15,6 @@ const PhArrowsCounterClockwise = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<polyline points="79.833 99.716 31.833 99.716 31.833 51.716" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M190.2254,65.7746a88,88,0,0,0-124.4508,0L31.83348,99.71573" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

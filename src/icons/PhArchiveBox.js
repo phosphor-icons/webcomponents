@@ -15,7 +15,6 @@ const PhArchiveBox = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M208,216H48a8,8,0,0,1-8-8V76L56,40H200l16,36V208A8,8,0,0,1,208,216Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="40" y1="76" x2="216" y2="76" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

@@ -15,7 +15,6 @@ const PhAlignRight = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="216.00586" y1="39.99512" x2="216.00586" y2="215.99512" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <rect x="72" y="56" width="104" height="52" rx="8" transform="translate(248 164) rotate(180)" stroke-width="24" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" fill="none"/>

@@ -15,7 +15,6 @@ const PhListPlus = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="40" y1="63.99414" x2="216" y2="63.99414" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="40.00614" y1="127.99414" x2="216" y2="127.99414" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

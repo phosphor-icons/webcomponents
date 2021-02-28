@@ -15,7 +15,6 @@ const PhCellSignalSlash = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="47.99463" y1="40.00842" x2="207.99463" y2="216.00842" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M207.99463,216.00842,27.31371,216a8,8,0,0,1-5.65686-13.65685l91.09823-91.09823" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

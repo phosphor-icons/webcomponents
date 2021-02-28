@@ -15,7 +15,6 @@ const PhHardDrive = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<rect x="24" y="72" width="208" height="112" rx="8" stroke-width="24" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <circle cx="180" cy="128" r="16"/>`}

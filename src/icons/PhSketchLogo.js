@@ -15,7 +15,6 @@ const PhSketchLogo = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<polygon points="72 40 184 40 240 104 128 224 16 104 72 40" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <polygon points="177.091 104 128 224 78.909 104 128 40 177.091 104" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

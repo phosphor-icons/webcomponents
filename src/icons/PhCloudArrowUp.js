@@ -15,7 +15,6 @@ const PhCloudArrowUp = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M96,207.98437H72A56,56,0,1,1,85.91924,97.7279" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M80,127.98437A80,80,0,1,1,224.00241,175.989" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

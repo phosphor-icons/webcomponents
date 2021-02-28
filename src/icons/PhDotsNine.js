@@ -15,7 +15,6 @@ const PhDotsNine = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<circle cx="60" cy="60" r="16"/>
   <circle cx="128" cy="60" r="16"/>

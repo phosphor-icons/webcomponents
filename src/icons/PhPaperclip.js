@@ -15,7 +15,6 @@ const PhPaperclip = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M95.99414,175.99512,191.799,83.799a28,28,0,0,0-39.598-39.598L54.05887,142.05887a48,48,0,0,0,67.88226,67.88226l82.053-81.946" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}
       ${weight === "duotone" &&

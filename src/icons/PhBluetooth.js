@@ -15,7 +15,6 @@ const PhBluetooth = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<polygon points="120 32.003 184 80.003 120 128.003 120 32.003" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <polygon points="120 128.003 184 176.003 120 224.003 120 128.003" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

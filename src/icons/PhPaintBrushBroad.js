@@ -15,7 +15,6 @@ const PhPaintBrushBroad = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M72,32H208a8,8,0,0,1,8,8V144a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64A32,32,0,0,1,72,32Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M112,152l-8,56a24,24,0,0,0,48,0l-8-56" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

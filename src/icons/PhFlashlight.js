@@ -15,7 +15,6 @@ const PhFlashlight = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M72.00244,24h112a8,8,0,0,1,8,8V77.33333a8,8,0,0,1-1.6,4.8l-20.8,27.73334a8,8,0,0,0-1.6,4.8V224a8,8,0,0,1-8,8h-64a8,8,0,0,1-8-8V114.66667a8,8,0,0,0-1.6-4.8l-20.8-27.73334a8,8,0,0,1-1.6-4.8V32A8,8,0,0,1,72.00244,24Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="128.00244" y1="120" x2="128.00244" y2="152" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

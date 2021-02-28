@@ -15,7 +15,6 @@ const PhFingerprint = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M107.99406,128.00837a20,20,0,1,1,40,0,211.06573,211.06573,0,0,1-24.95471,99.87857" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M127.99406,68.00837a60,60,0,0,1,60,60q0,12.14234-1.128,24.00022" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

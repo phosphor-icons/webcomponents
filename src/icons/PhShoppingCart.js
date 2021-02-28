@@ -15,7 +15,6 @@ const PhShoppingCart = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M192,180H68.49479a8,8,0,0,1-7.871-6.56892L33.92162,26.56892A8,8,0,0,0,26.05066,20H12" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <circle cx="72" cy="200" r="20" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

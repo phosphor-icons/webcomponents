@@ -15,7 +15,6 @@ const PhStop = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<rect x="52" y="52" width="152" height="152" rx="6.90909" stroke-width="24" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`}
       ${weight === "duotone" &&

@@ -15,7 +15,6 @@ const PhArrowULeftUp = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<polyline points="136 80 88 32 40 80" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M200,80v88a56,56,0,0,1-56,56h-.00011A55.99988,55.99988,0,0,1,88,168.00011V32" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}

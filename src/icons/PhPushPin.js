@@ -15,7 +15,6 @@ const PhPushPin = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="128" y1="192" x2="128" y2="240" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M215.02036,182.3046a48.03614,48.03614,0,0,0-20.16513-30.0948,7.99547,7.99547,0,0,1-3.41652-5.8483L180.72054,39.20379A8,8,0,0,0,172.76026,32H83.23974a8,8,0,0,0-7.96028,7.20379L64.56129,146.3615a7.99547,7.99547,0,0,1-3.41652,5.8483,48.03614,48.03614,0,0,0-20.16513,30.0948A8.0279,8.0279,0,0,0,48.804,192H207.196A8.0279,8.0279,0,0,0,215.02036,182.3046Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}

@@ -15,7 +15,6 @@ const PhDatabase = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<ellipse cx="128" cy="80" rx="88" ry="48" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M40,80v48c0,26.50967,39.39894,48,88,48s88-21.49033,88-48V80" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

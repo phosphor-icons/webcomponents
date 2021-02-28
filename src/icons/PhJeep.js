@@ -15,7 +15,6 @@ const PhJeep = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M220,176v32a8,8,0,0,1-8,8H188a8,8,0,0,1-8-8V176" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M76,176v32a8,8,0,0,1-8,8H44a8,8,0,0,1-8-8V176" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

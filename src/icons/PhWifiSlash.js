@@ -15,7 +15,6 @@ const PhWifiSlash = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="47.98242" y1="40" x2="207.98242" y2="216" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M25.04621,98.17952A145.88673,145.88673,0,0,1,72.40779,66.8671" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

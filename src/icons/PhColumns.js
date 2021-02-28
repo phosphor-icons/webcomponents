@@ -15,7 +15,6 @@ const PhColumns = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<rect x="-10" y="98" width="176" height="60" rx="8" transform="translate(206 50) rotate(90)" stroke-width="24" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <rect x="90" y="98" width="176" height="60" rx="8" transform="translate(306 -50) rotate(90)" stroke-width="24" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`}

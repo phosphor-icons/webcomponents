@@ -15,7 +15,6 @@ const PhEyeClosed = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="201.14971" y1="127.30467" x2="223.95961" y2="166.81257" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="154.18201" y1="149.26298" x2="161.29573" y2="189.60689" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

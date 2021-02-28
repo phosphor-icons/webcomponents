@@ -15,7 +15,6 @@ const PhWind = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M102.11138,51.99974A24.0001,24.0001,0,1,1,120,92H24" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M190.11128,91.99985A24.0001,24.0001,0,1,1,208,132H32" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

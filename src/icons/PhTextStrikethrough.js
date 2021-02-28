@@ -15,7 +15,6 @@ const PhTextStrikethrough = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M171.73144,79.99989C169.29943,62.00014,150.648,48,128,48c-24.30053,0-44,16.11775-44,36a32.40178,32.40178,0,0,0,2.00532,12.00253" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

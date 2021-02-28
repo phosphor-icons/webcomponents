@@ -15,7 +15,6 @@ const PhSunHorizon = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="92.79312" y1="59.00308" x2="85.13946" y2="40.52549" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="43.00308" y1="108.79312" x2="24.52549" y2="101.13946" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

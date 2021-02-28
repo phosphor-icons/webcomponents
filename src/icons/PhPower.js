@@ -15,7 +15,6 @@ const PhPower = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="127.99219" y1="48.00288" x2="127.99219" y2="124.00288" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M176.00189,54.23268a88,88,0,1,1-96.00346-.00021" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}

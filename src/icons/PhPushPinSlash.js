@@ -15,7 +15,6 @@ const PhPushPinSlash = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="128" y1="192" x2="128" y2="240" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M72.5038,66.95418,64.56129,146.3615a7.99543,7.99543,0,0,1-3.41653,5.8483,48.03616,48.03616,0,0,0-20.16512,30.0948A8.0279,8.0279,0,0,0,48.804,192H186.18182" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

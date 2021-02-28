@@ -15,7 +15,6 @@ const PhHandWaving = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<g>
     <path d="M119.99332,106.41921l-26-45.03332a20,20,0,0,1,34.641-20l40,69.282" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

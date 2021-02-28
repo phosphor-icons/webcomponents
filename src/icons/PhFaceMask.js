@@ -15,7 +15,6 @@ const PhFaceMask = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M208,136c0,50.95006-66.22217,68.789-78.16566,71.59207a8.00537,8.00537,0,0,1-3.66868,0C114.22217,204.789,48,186.95006,48,136V77.41626a8,8,0,0,1,5.02887-7.42781l72-28.8a8,8,0,0,1,5.94226,0l72,28.8A8,8,0,0,1,208,77.41626Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="88" y1="108" x2="168" y2="108" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

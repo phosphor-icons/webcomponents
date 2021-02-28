@@ -15,7 +15,6 @@ const PhTextT = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="127.99414" y1="55.99512" x2="127.99414" y2="199.99512" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <polyline points="47.994 87.995 47.994 55.995 207.994 55.995 207.994 87.995" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

@@ -15,7 +15,6 @@ const PhPaintBucket = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<rect x="42.46089" y="60.11775" width="147.07821" height="135.7645" rx="8" transform="translate(-56.53405 119.51472) rotate(-45)" stroke-width="24" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <circle cx="128" cy="116.00586" r="20" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

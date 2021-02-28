@@ -15,7 +15,6 @@ const PhCloudSnow = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M88,96a68,68,0,1,1,68,68H76A44,44,0,1,1,90.30583,78.37792" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <circle cx="160" cy="216" r="16"/>

@@ -15,7 +15,6 @@ const PhSlidersHorizontal = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="147.99951" y1="171.99353" x2="39.99951" y2="171.99365" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="215.99951" y1="171.99365" x2="187.99951" y2="171.99353" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

@@ -15,7 +15,6 @@ const PhLinkSimpleHorizontal = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="79.97949" y1="127.99219" x2="175.97949" y2="127.99219" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M103.97266,175.99609h-40a48,48,0,0,1,0-96h40" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

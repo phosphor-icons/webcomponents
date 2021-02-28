@@ -15,7 +15,6 @@ const PhAirplaneTakeoff = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="24" y1="216" x2="168" y2="216" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M16.92713,140.36918,54.6225,175.70859a32,32,0,0,0,37.97,4.319L244,92,225.3607,69.21863a32,32,0,0,0-40.99128-7.31829L140,88,80,68,63.501,75.071a8,8,0,0,0-2.20037,13.29951L92,116,64,132,36,120l-16.7527,7.17973A8,8,0,0,0,16.92713,140.36918Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}

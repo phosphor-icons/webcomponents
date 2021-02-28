@@ -15,7 +15,6 @@ const PhFadersHorizontal = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="131.99902" y1="171.99304" x2="39.99902" y2="171.99317" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="215.99902" y1="171.99317" x2="171.99902" y2="171.99304" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

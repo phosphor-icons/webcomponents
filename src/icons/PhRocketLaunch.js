@@ -15,7 +15,6 @@ const PhRocketLaunch = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M195.88225,105.37258,128,173.25483,82.74517,128l67.88225-67.88225c25.70415-25.70415,51.40829-25.45342,62.37042-23.81787a7.96343,7.96343,0,0,1,6.70228,6.70228C221.33567,53.96429,221.5864,79.66843,195.88225,105.37258Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M184.56854,116.68629v64.56854a8,8,0,0,1-2.34314,5.65686l-32.34176,32.34176a8,8,0,0,1-13.5015-4.08793L128,173.25483" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

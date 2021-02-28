@@ -15,7 +15,6 @@ const PhLightningSlash = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="48" y1="40.00391" x2="208" y2="216.00391" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <polyline points="163.777 167.359 96 239.977 112 159.977 48 135.976 92.198 88.622" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

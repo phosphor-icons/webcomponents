@@ -15,7 +15,6 @@ const PhTrainRegional = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M70.11037,32H185.88963a8,8,0,0,1,7.71811,5.89506L216,120l-22.39226,82.10494A8,8,0,0,1,185.88963,208H70.11037a8,8,0,0,1-7.71811-5.89506L40,120,62.39226,37.89506A8,8,0,0,1,70.11037,32Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="128" y1="208" x2="128" y2="136" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

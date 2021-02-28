@@ -15,7 +15,6 @@ const PhChatCenteredText = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="96.00049" y1="99.99951" x2="160.00049" y2="99.99951" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="96.00049" y1="139.99951" x2="160.00049" y2="139.99951" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

@@ -15,7 +15,6 @@ const PhRocket = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<line x1="144" y1="228" x2="112" y2="228" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M122.97053,19.76275C103.97814,34.97686,40.45429,95.77187,96,192h64c54.39078-96.16-8.20388-156.9371-26.9971-172.20489A7.98387,7.98387,0,0,0,122.97053,19.76275Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

@@ -15,7 +15,6 @@ const PhNumberFive = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M176,32H95.66955L80,128.40465a55.99871,55.99871,0,1,1,0,79.19378" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}
       ${weight === "duotone" &&

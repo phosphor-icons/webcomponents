@@ -15,7 +15,6 @@ const PhLinkBreak = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M122.34266,71.43146l19.799-19.799A44,44,0,0,1,204.367,113.85786l-19.799,19.799" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M133.65637,184.56854l-19.799,19.799A44,44,0,1,1,51.632,142.14214l19.799-19.799" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>

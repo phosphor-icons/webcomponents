@@ -15,7 +15,6 @@ const PhBookmarks = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<path d="M164,228l-56.0074-40L52,228V76a8,8,0,0,1,8-8h96a8,8,0,0,1,8,8Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M92,28H196a8,8,0,0,1,8,8V188" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>`}

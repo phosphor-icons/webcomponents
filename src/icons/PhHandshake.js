@@ -15,7 +15,6 @@ const PhHandshake = {
       viewBox="0 0 256 256"
       transform=${mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${weight === "bold" &&
       svg`<g>
     <path d="M236.71765,121.78477,212,134.14359l-32-61.282,24.9693-12.48465a8,8,0,0,1,10.66912,3.45246l24.59293,47.097A8,8,0,0,1,236.71765,121.78477Z" fill="none" stroke="${color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
