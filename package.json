@@ -1,17 +1,30 @@
 {
   "name": "phosphor-webcomponents",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "A flexible icon family for the web",
-  "main": "index.js",
+  "main": "src/index.js",
+  "browser": "src/index.js",
+  "module": "src/index.js",
+  "unpkg": "dist/index.js",
+  "files": [
+    "dist/",
+    "example/",
+    "src/"
+  ],
+  "sideEffects": false,
   "scripts": {
     "assemble": "node bin/assemble.js",
     "start": "parcel example/index.html",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.js"
+    "build": "parcel build src/index.js --experimental-scope-hoisting"
   },
   "author": "rektdeckard",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phosphor-icons/phosphor-webcomponents.git"
+  },
   "dependencies": {
     "hybrids": "^4.3.3"
   },
