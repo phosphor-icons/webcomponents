@@ -11,10 +11,7 @@ export default defineConfig({
       fileName: (format, name) => `${name}.${format}.js`,
     },
     rollupOptions: {
-      output: {
-        preserveModules: true,
-        preserveModulesRoot: "src",
-      },
+      output: {},
     },
   },
 });
