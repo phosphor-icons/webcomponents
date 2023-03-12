@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2017",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "Node",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
