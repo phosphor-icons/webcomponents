@@ -2,6 +2,12 @@
   "name": "@phosphor-icons/webcomponents",
   "version": "2.0.0",
   "description": "A flexible icon family for the web",
+  "author": "rektdeckard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phosphor-icons/webcomponents.git"
+  },
   "main": "dist/index.es.js",
   "browser": "dist/index.es.js",
   "module": "dist/index.es.js",
@@ -13,6 +19,7 @@
   "files": [
     "dist/"
   ],
+  "types": "dist/index.d.ts",
   "private": false,
   "sideEffects": false,
   "scripts": {
@@ -20,12 +27,6 @@
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\" \"./scripts/*.cjs\" \"./index.html\"",
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly"
-  },
-  "author": "rektdeckard",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/phosphor-icons/webcomponents.git"
   },
   "dependencies": {
     "lit": "^2.6.1"
