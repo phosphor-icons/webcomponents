@@ -501,10 +501,7 @@ export { default as PhFileJpg } from "./icons/PhFileJpg";
 export { default as PhFileJs } from "./icons/PhFileJs";
 export { default as PhFileJsx } from "./icons/PhFileJsx";
 export { default as PhFileLock } from "./icons/PhFileLock";
-export {
-  default as PhFileMagnifyingGlass,
-  default as PhFileSearch,
-} from "./icons/PhFileMagnifyingGlass";
+export { default as PhFileMagnifyingGlass } from "./icons/PhFileMagnifyingGlass";
 export { default as PhFileMinus } from "./icons/PhFileMinus";
 export { default as PhFilePdf } from "./icons/PhFilePdf";
 export { default as PhFilePlus } from "./icons/PhFilePlus";
@@ -689,7 +686,10 @@ export { default as PhImage } from "./icons/PhImage";
 export { default as PhImageSquare } from "./icons/PhImageSquare";
 export { default as PhImages } from "./icons/PhImages";
 export { default as PhImagesSquare } from "./icons/PhImagesSquare";
-export { default as PhInfinity } from "./icons/PhInfinity";
+export {
+  default as PhInfinity,
+  default as PhLemniscate,
+} from "./icons/PhInfinity";
 export { default as PhInfo } from "./icons/PhInfo";
 export { default as PhInstagramLogo } from "./icons/PhInstagramLogo";
 export { default as PhIntersect } from "./icons/PhIntersect";
