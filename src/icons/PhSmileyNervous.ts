@@ -40,7 +40,7 @@ export default class PhSmileyNervous extends LitElement {
   weight: IconWeight = "regular";
 
   @property({ type: String })
-  color: string = "regular";
+  color: string = "currentColor";
 
   @property({ type: Boolean })
   mirrored: boolean = false;

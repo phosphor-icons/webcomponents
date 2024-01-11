@@ -82,7 +82,7 @@ export default class Ph${name} extends LitElement {
   weight: IconWeight = "regular";
   
   @property({ type: String })
-  color: string = "regular";
+  color: string = "currentColor";
   
   @property({ type: Boolean })
   mirrored: boolean = false;
@@ -186,12 +186,18 @@ function generateExample(icons: AssetMap) {
         width: max-content;
       }
 
+      .entry {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        place-items: center;
+        gap: 16px;
+      }
+
       .row {
         position: relative;
-        display: grid;
-        grid-template-columns: 1fr repeat(8, 32px);
-        gap: 16px;
+        display: flex;
         align-items: center;
+        gap: 16px;
         font-size: 32px;
         padding: 8px 0;
       }
@@ -206,10 +212,11 @@ function generateExample(icons: AssetMap) {
     <h1>Phosphor Webcomponents</h1>
     ${Object.keys(icons)
       .map(
-        (key) => `<div class="row">
+        (key) => `<div class="entry">
       ${[
         `<span>Ph${pascalize(key)}</span>`,
-        `<ph-${key}></ph-${key}>`,
+        `<div class="row">`,
+        `<ph-${key} size="48"></ph-${key}>`,
         `<ph-${key} color="crimson"></ph-${key}>`,
         `<ph-${key} color="cadetblue"></ph-${key}>`,
         `<ph-${key} weight="thin"></ph-${key}>`,
@@ -217,6 +224,7 @@ function generateExample(icons: AssetMap) {
         `<ph-${key} weight="bold"></ph-${key}>`,
         `<ph-${key} weight="fill"></ph-${key}>`,
         `<ph-${key} weight="duotone"></ph-${key}>`,
+        `</div>`,
       ].join("\n")}
       </div>`
       )

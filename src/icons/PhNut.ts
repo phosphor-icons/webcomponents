@@ -40,7 +40,7 @@ export default class PhNut extends LitElement {
   weight: IconWeight = "regular";
 
   @property({ type: String })
-  color: string = "regular";
+  color: string = "currentColor";
 
   @property({ type: Boolean })
   mirrored: boolean = false;
