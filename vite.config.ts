@@ -6,12 +6,22 @@ export default defineConfig({
     target: "ES2017",
     lib: {
       entry: "src/index.ts",
-      formats: ["es"],
       name: "Ph",
-      fileName: (format, name) => `${name}.${format}.js`,
+      fileName: (format, name) => `${name}.${format === "umd" ? "cjs" : "mjs"}`,
     },
     rollupOptions: {
-      output: {},
+      input: "./src/index.ts",
+      output: [
+        {
+          format: "es",
+          preserveModules: true,
+          preserveModulesRoot: "src",
+        },
+        {
+          format: "umd",
+          name: "Ph",
+        },
+      ],
     },
   },
 });

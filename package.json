@@ -1,6 +1,6 @@
 {
   "name": "@phosphor-icons/webcomponents",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A flexible icon family for the web",
   "author": "rektdeckard",
   "license": "MIT",
@@ -8,20 +8,28 @@
     "type": "git",
     "url": "https://github.com/phosphor-icons/webcomponents.git"
   },
-  "main": "dist/index.es.js",
-  "browser": "dist/index.es.js",
-  "module": "dist/index.es.js",
-  "unpkg": "dist/index.es.js",
+  "main": "dist/index.cjs",
+  "browser": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.es.js"
+    "./*": {
+      "import": "./dist/icons/*.mjs",
+      "types": "./dist/icons/*.d.ts"
+    },
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
   },
   "type": "module",
   "files": [
     "dist/"
   ],
-  "types": "dist/index.d.ts",
   "private": false,
-  "sideEffects": false,
+  "sideEffects": true,
   "scripts": {
     "assemble": "tsx scripts/assemble.ts",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\" \"./scripts/*.ts\" \"./index.html\"",
@@ -34,9 +42,9 @@
   "devDependencies": {
     "@types/node": "18",
     "chalk": "^4.1.0",
-    "prettier": "^2.8.4",
+    "prettier": "^3.2.4",
     "tsx": "^4.7.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4"
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
   }
 }

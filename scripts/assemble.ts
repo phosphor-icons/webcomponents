@@ -62,10 +62,16 @@ function generateComponents(icons: AssetMap) {
 import { html, svg, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import { IconWeight } from '../types';
+import type { IconWeight } from '../types';
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "ph-${key}": Ph${name};
+  }
+}
 
 @customElement('ph-${key}')
-export default class Ph${name} extends LitElement {
+class Ph${name} extends LitElement {
   static weightsMap = new Map<IconWeight, ReturnType<typeof svg>>([
     ["thin", svg\`${icon.thin}\`],
     ["light", svg\`${icon.light}\`],
@@ -102,11 +108,7 @@ export default class Ph${name} extends LitElement {
   }
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    "ph-${key}": Ph${name};
-  }
-}
+export { Ph${name} }
 `;
     try {
       fs.writeFileSync(
@@ -145,8 +147,8 @@ function generateExports(icons: AssetMap) {
     const name = pascalize(key);
 
     indexString += `\
-export { default as Ph${name}${
-      !!ALIASES[key] ? `, default as Ph${pascalize(ALIASES[key])}` : ""
+export { Ph${name}${
+      !!ALIASES[key] ? `, Ph${name} as Ph${pascalize(ALIASES[key])}` : ""
     } } from "./icons/Ph${name}";
 `;
   }
