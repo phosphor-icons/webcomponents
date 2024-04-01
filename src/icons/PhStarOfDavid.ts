@@ -2,15 +2,15 @@
 import { html, svg, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-import type { IconWeight } from "../types";
+import type { IconWeight, IconAttrs } from "../types";
 
 declare global {
   interface HTMLElementTagNameMap {
-    "ph-star-of-david": PhStarOfDavid;
+    "ph-star-of-david": IconAttrs;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "ph-star-of-david": PhStarOfDavid;
+      "ph-star-of-david": IconAttrs;
     }
   }
 }
@@ -44,16 +44,16 @@ class PhStarOfDavid extends LitElement {
     ],
   ]);
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   size?: string | number = "1em";
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   weight?: IconWeight = "regular";
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   color?: string = "currentColor";
 
-  @property({ type: Boolean })
+  @property({ type: Boolean, reflect: true })
   mirrored?: boolean = false;
 
   render() {

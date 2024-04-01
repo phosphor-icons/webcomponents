@@ -2,15 +2,15 @@
 import { html, svg, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-import type { IconWeight } from "../types";
+import type { IconWeight, IconAttrs } from "../types";
 
 declare global {
   interface HTMLElementTagNameMap {
-    "ph-text-t-slash": PhTextTSlash;
+    "ph-text-t-slash": IconAttrs;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "ph-text-t-slash": PhTextTSlash;
+      "ph-text-t-slash": IconAttrs;
     }
   }
 }
@@ -44,16 +44,16 @@ class PhTextTSlash extends LitElement {
     ],
   ]);
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   size?: string | number = "1em";
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   weight?: IconWeight = "regular";
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   color?: string = "currentColor";
 
-  @property({ type: Boolean })
+  @property({ type: Boolean, reflect: true })
   mirrored?: boolean = false;
 
   render() {

@@ -5,3 +5,10 @@ export type IconWeight =
   | "bold"
   | "fill"
   | "duotone";
+
+export type IconAttrs = {
+  size?: string | number;
+  weight?: IconWeight;
+  color?: string;
+  mirrored?: boolean;
+};

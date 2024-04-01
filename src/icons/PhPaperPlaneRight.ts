@@ -2,15 +2,15 @@
 import { html, svg, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-import type { IconWeight } from "../types";
+import type { IconWeight, IconAttrs } from "../types";
 
 declare global {
   interface HTMLElementTagNameMap {
-    "ph-paper-plane-right": PhPaperPlaneRight;
+    "ph-paper-plane-right": IconAttrs;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "ph-paper-plane-right": PhPaperPlaneRight;
+      "ph-paper-plane-right": IconAttrs;
     }
   }
 }
@@ -44,16 +44,16 @@ class PhPaperPlaneRight extends LitElement {
     ],
   ]);
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   size?: string | number = "1em";
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   weight?: IconWeight = "regular";
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   color?: string = "currentColor";
 
-  @property({ type: Boolean })
+  @property({ type: Boolean, reflect: true })
   mirrored?: boolean = false;
 
   render() {

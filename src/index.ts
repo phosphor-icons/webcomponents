@@ -1,4 +1,5 @@
 /* GENERATED FILE */
+export * from "./types";
 export { PhAcorn } from "./icons/PhAcorn";
 export { PhAddressBook } from "./icons/PhAddressBook";
 export { PhAddressBookTabs } from "./icons/PhAddressBookTabs";

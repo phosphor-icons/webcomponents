@@ -62,15 +62,15 @@ function generateComponents(icons: AssetMap) {
 import { html, svg, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import type { IconWeight } from '../types';
+import type { IconWeight, IconAttrs } from '../types';
 
 declare global {
   interface HTMLElementTagNameMap {
-    "ph-${key}": Ph${name};
+    "ph-${key}": IconAttrs;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "ph-${key}": Ph${name};
+      "ph-${key}": IconAttrs;
     }
   }
 }
@@ -86,16 +86,16 @@ class Ph${name} extends LitElement {
     ["duotone", svg\`${icon.duotone}\`],
   ]);
   
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   size?: string | number = "1em";
   
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   weight?: IconWeight = "regular";
   
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   color?: string = "currentColor";
   
-  @property({ type: Boolean })
+  @property({ type: Boolean, reflect: true })
   mirrored?: boolean = false;
   
   render() {
@@ -147,6 +147,7 @@ export { Ph${name} }
 function generateExports(icons: AssetMap) {
   let indexString = `\
 /* GENERATED FILE */
+export * from "./types";
 `;
   for (let key in icons) {
     const name = pascalize(key);
