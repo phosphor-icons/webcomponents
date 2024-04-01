@@ -16,7 +16,7 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 To add Phosphor web components to your app via CDN, you can include the following in the `<head>` of the document:
 
 ```html
-<script type="module" src="https://unpkg.com/@phosphor-icons/webcomponents@2.0.5"></script>
+<script type="module" src="https://unpkg.com/@phosphor-icons/webcomponents@2.1"></script>
 ```
 
 To use within ES modules, install the package and import once near the root of your app:
