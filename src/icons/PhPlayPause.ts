@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-play-pause": PhPlayPause;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-play-pause": PhPlayPause;
+    }
+  }
 }
 
 @customElement("ph-play-pause")

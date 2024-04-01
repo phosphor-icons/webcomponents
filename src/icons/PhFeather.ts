@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-feather": PhFeather;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-feather": PhFeather;
+    }
+  }
 }
 
 @customElement("ph-feather")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-export": PhExport;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-export": PhExport;
+    }
+  }
 }
 
 @customElement("ph-export")

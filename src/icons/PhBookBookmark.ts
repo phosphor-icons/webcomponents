@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-book-bookmark": PhBookBookmark;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-book-bookmark": PhBookBookmark;
+    }
+  }
 }
 
 @customElement("ph-book-bookmark")

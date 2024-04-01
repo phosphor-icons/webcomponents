@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sign-in": PhSignIn;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sign-in": PhSignIn;
+    }
+  }
 }
 
 @customElement("ph-sign-in")

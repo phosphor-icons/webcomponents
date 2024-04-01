@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-browser": PhBrowser;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-browser": PhBrowser;
+    }
+  }
 }
 
 @customElement("ph-browser")

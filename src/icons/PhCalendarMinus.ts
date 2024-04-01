@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-calendar-minus": PhCalendarMinus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-calendar-minus": PhCalendarMinus;
+    }
+  }
 }
 
 @customElement("ph-calendar-minus")

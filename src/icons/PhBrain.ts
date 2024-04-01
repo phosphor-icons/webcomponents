@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-brain": PhBrain;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-brain": PhBrain;
+    }
+  }
 }
 
 @customElement("ph-brain")

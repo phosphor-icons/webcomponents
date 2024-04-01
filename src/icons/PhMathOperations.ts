@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-math-operations": PhMathOperations;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-math-operations": PhMathOperations;
+    }
+  }
 }
 
 @customElement("ph-math-operations")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cross": PhCross;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cross": PhCross;
+    }
+  }
 }
 
 @customElement("ph-cross")

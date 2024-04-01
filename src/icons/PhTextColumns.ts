@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-columns": PhTextColumns;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-columns": PhTextColumns;
+    }
+  }
 }
 
 @customElement("ph-text-columns")

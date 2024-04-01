@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-equalizer": PhEqualizer;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-equalizer": PhEqualizer;
+    }
+  }
 }
 
 @customElement("ph-equalizer")

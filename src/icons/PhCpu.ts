@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cpu": PhCpu;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cpu": PhCpu;
+    }
+  }
 }
 
 @customElement("ph-cpu")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-smiley-sticker": PhSmileySticker;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-smiley-sticker": PhSmileySticker;
+    }
+  }
 }
 
 @customElement("ph-smiley-sticker")

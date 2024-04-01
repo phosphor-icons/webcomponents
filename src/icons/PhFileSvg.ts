@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-file-svg": PhFileSvg;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-file-svg": PhFileSvg;
+    }
+  }
 }
 
 @customElement("ph-file-svg")

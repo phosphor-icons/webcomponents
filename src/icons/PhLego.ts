@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-lego": PhLego;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-lego": PhLego;
+    }
+  }
 }
 
 @customElement("ph-lego")

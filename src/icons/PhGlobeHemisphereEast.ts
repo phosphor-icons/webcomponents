@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-globe-hemisphere-east": PhGlobeHemisphereEast;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-globe-hemisphere-east": PhGlobeHemisphereEast;
+    }
+  }
 }
 
 @customElement("ph-globe-hemisphere-east")

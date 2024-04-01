@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-flag-pennant": PhFlagPennant;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-flag-pennant": PhFlagPennant;
+    }
+  }
 }
 
 @customElement("ph-flag-pennant")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-lasso": PhLasso;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-lasso": PhLasso;
+    }
+  }
 }
 
 @customElement("ph-lasso")

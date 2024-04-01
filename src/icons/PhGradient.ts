@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-gradient": PhGradient;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-gradient": PhGradient;
+    }
+  }
 }
 
 @customElement("ph-gradient")

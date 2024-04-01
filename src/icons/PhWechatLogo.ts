@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-wechat-logo": PhWechatLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-wechat-logo": PhWechatLogo;
+    }
+  }
 }
 
 @customElement("ph-wechat-logo")

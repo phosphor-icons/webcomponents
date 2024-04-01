@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-replit-logo": PhReplitLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-replit-logo": PhReplitLogo;
+    }
+  }
 }
 
 @customElement("ph-replit-logo")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-kanban": PhKanban;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-kanban": PhKanban;
+    }
+  }
 }
 
 @customElement("ph-kanban")

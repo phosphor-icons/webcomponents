@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-linktree-logo": PhLinktreeLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-linktree-logo": PhLinktreeLogo;
+    }
+  }
 }
 
 @customElement("ph-linktree-logo")

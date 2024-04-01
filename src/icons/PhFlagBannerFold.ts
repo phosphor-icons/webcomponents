@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-flag-banner-fold": PhFlagBannerFold;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-flag-banner-fold": PhFlagBannerFold;
+    }
+  }
 }
 
 @customElement("ph-flag-banner-fold")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-spotify-logo": PhSpotifyLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-spotify-logo": PhSpotifyLogo;
+    }
+  }
 }
 
 @customElement("ph-spotify-logo")

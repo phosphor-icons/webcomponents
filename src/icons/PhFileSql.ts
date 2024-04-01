@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-file-sql": PhFileSql;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-file-sql": PhFileSql;
+    }
+  }
 }
 
 @customElement("ph-file-sql")

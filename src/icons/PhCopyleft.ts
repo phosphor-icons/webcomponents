@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-copyleft": PhCopyleft;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-copyleft": PhCopyleft;
+    }
+  }
 }
 
 @customElement("ph-copyleft")

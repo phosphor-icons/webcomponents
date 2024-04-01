@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-strikethrough": PhTextStrikethrough;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-strikethrough": PhTextStrikethrough;
+    }
+  }
 }
 
 @customElement("ph-text-strikethrough")

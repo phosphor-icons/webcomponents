@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-contactless-payment": PhContactlessPayment;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-contactless-payment": PhContactlessPayment;
+    }
+  }
 }
 
 @customElement("ph-contactless-payment")

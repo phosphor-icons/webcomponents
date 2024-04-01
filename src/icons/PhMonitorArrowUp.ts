@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-monitor-arrow-up": PhMonitorArrowUp;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-monitor-arrow-up": PhMonitorArrowUp;
+    }
+  }
 }
 
 @customElement("ph-monitor-arrow-up")

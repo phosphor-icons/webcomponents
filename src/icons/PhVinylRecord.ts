@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-vinyl-record": PhVinylRecord;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-vinyl-record": PhVinylRecord;
+    }
+  }
 }
 
 @customElement("ph-vinyl-record")

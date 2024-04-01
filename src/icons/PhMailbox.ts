@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-mailbox": PhMailbox;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-mailbox": PhMailbox;
+    }
+  }
 }
 
 @customElement("ph-mailbox")

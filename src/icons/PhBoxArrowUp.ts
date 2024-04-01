@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-box-arrow-up": PhBoxArrowUp;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-box-arrow-up": PhBoxArrowUp;
+    }
+  }
 }
 
 @customElement("ph-box-arrow-up")

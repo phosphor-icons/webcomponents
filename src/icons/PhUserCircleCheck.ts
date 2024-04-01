@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-user-circle-check": PhUserCircleCheck;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-user-circle-check": PhUserCircleCheck;
+    }
+  }
 }
 
 @customElement("ph-user-circle-check")

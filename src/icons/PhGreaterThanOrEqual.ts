@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-greater-than-or-equal": PhGreaterThanOrEqual;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-greater-than-or-equal": PhGreaterThanOrEqual;
+    }
+  }
 }
 
 @customElement("ph-greater-than-or-equal")

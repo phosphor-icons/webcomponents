@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-toolbox": PhToolbox;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-toolbox": PhToolbox;
+    }
+  }
 }
 
 @customElement("ph-toolbox")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pencil-slash": PhPencilSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pencil-slash": PhPencilSlash;
+    }
+  }
 }
 
 @customElement("ph-pencil-slash")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-hand-swipe-right": PhHandSwipeRight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-hand-swipe-right": PhHandSwipeRight;
+    }
+  }
 }
 
 @customElement("ph-hand-swipe-right")

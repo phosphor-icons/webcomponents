@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-h-six": PhTextHSix;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-h-six": PhTextHSix;
+    }
+  }
 }
 
 @customElement("ph-text-h-six")

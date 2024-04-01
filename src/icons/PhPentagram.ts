@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pentagram": PhPentagram;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pentagram": PhPentagram;
+    }
+  }
 }
 
 @customElement("ph-pentagram")

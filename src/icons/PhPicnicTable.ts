@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-picnic-table": PhPicnicTable;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-picnic-table": PhPicnicTable;
+    }
+  }
 }
 
 @customElement("ph-picnic-table")

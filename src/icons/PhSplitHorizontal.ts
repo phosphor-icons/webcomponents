@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-split-horizontal": PhSplitHorizontal;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-split-horizontal": PhSplitHorizontal;
+    }
+  }
 }
 
 @customElement("ph-split-horizontal")

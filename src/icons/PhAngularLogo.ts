@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-angular-logo": PhAngularLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-angular-logo": PhAngularLogo;
+    }
+  }
 }
 
 @customElement("ph-angular-logo")

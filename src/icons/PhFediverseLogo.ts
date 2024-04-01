@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-fediverse-logo": PhFediverseLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-fediverse-logo": PhFediverseLogo;
+    }
+  }
 }
 
 @customElement("ph-fediverse-logo")

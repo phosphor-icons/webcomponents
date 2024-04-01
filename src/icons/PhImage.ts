@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-image": PhImage;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-image": PhImage;
+    }
+  }
 }
 
 @customElement("ph-image")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-selection-foreground": PhSelectionForeground;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-selection-foreground": PhSelectionForeground;
+    }
+  }
 }
 
 @customElement("ph-selection-foreground")

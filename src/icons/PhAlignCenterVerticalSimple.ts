@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-align-center-vertical-simple": PhAlignCenterVerticalSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-align-center-vertical-simple": PhAlignCenterVerticalSimple;
+    }
+  }
 }
 
 @customElement("ph-align-center-vertical-simple")

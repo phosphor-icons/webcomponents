@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-matrix-logo": PhMatrixLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-matrix-logo": PhMatrixLogo;
+    }
+  }
 }
 
 @customElement("ph-matrix-logo")

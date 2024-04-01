@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-device-mobile-slash": PhDeviceMobileSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-device-mobile-slash": PhDeviceMobileSlash;
+    }
+  }
 }
 
 @customElement("ph-device-mobile-slash")

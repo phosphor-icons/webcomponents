@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrow-u-right-down": PhArrowURightDown;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrow-u-right-down": PhArrowURightDown;
+    }
+  }
 }
 
 @customElement("ph-arrow-u-right-down")

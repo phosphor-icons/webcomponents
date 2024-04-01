@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sidebar": PhSidebar;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sidebar": PhSidebar;
+    }
+  }
 }
 
 @customElement("ph-sidebar")

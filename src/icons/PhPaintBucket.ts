@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paint-bucket": PhPaintBucket;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paint-bucket": PhPaintBucket;
+    }
+  }
 }
 
 @customElement("ph-paint-bucket")

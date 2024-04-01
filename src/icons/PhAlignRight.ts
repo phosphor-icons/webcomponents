@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-align-right": PhAlignRight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-align-right": PhAlignRight;
+    }
+  }
 }
 
 @customElement("ph-align-right")

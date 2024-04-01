@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-power": PhPower;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-power": PhPower;
+    }
+  }
 }
 
 @customElement("ph-power")

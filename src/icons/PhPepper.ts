@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pepper": PhPepper;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pepper": PhPepper;
+    }
+  }
 }
 
 @customElement("ph-pepper")

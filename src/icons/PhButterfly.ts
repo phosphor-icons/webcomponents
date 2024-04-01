@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-butterfly": PhButterfly;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-butterfly": PhButterfly;
+    }
+  }
 }
 
 @customElement("ph-butterfly")

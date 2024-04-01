@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shield-chevron": PhShieldChevron;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shield-chevron": PhShieldChevron;
+    }
+  }
 }
 
 @customElement("ph-shield-chevron")

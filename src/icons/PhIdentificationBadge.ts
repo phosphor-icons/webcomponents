@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-identification-badge": PhIdentificationBadge;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-identification-badge": PhIdentificationBadge;
+    }
+  }
 }
 
 @customElement("ph-identification-badge")

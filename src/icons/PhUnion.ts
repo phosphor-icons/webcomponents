@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-union": PhUnion;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-union": PhUnion;
+    }
+  }
 }
 
 @customElement("ph-union")

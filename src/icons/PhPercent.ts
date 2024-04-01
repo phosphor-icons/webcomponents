@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-percent": PhPercent;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-percent": PhPercent;
+    }
+  }
 }
 
 @customElement("ph-percent")

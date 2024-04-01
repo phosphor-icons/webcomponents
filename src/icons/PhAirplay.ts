@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-airplay": PhAirplay;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-airplay": PhAirplay;
+    }
+  }
 }
 
 @customElement("ph-airplay")

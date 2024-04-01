@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-drop-slash": PhDropSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-drop-slash": PhDropSlash;
+    }
+  }
 }
 
 @customElement("ph-drop-slash")

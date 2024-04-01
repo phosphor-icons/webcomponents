@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-skip-forward": PhSkipForward;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-skip-forward": PhSkipForward;
+    }
+  }
 }
 
 @customElement("ph-skip-forward")

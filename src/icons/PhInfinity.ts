@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-infinity": PhInfinity;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-infinity": PhInfinity;
+    }
+  }
 }
 
 @customElement("ph-infinity")

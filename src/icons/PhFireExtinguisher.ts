@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-fire-extinguisher": PhFireExtinguisher;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-fire-extinguisher": PhFireExtinguisher;
+    }
+  }
 }
 
 @customElement("ph-fire-extinguisher")

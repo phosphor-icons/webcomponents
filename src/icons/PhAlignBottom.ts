@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-align-bottom": PhAlignBottom;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-align-bottom": PhAlignBottom;
+    }
+  }
 }
 
 @customElement("ph-align-bottom")

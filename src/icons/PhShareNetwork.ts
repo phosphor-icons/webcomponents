@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-share-network": PhShareNetwork;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-share-network": PhShareNetwork;
+    }
+  }
 }
 
 @customElement("ph-share-network")

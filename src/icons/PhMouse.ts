@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-mouse": PhMouse;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-mouse": PhMouse;
+    }
+  }
 }
 
 @customElement("ph-mouse")

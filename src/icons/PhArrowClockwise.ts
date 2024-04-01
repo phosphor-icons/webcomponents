@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrow-clockwise": PhArrowClockwise;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrow-clockwise": PhArrowClockwise;
+    }
+  }
 }
 
 @customElement("ph-arrow-clockwise")

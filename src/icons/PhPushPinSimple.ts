@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-push-pin-simple": PhPushPinSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-push-pin-simple": PhPushPinSimple;
+    }
+  }
 }
 
 @customElement("ph-push-pin-simple")

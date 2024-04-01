@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-prohibit": PhProhibit;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-prohibit": PhProhibit;
+    }
+  }
 }
 
 @customElement("ph-prohibit")

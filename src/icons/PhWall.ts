@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-wall": PhWall;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-wall": PhWall;
+    }
+  }
 }
 
 @customElement("ph-wall")

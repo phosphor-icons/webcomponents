@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-ruler": PhRuler;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-ruler": PhRuler;
+    }
+  }
 }
 
 @customElement("ph-ruler")

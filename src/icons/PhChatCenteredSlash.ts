@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chat-centered-slash": PhChatCenteredSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chat-centered-slash": PhChatCenteredSlash;
+    }
+  }
 }
 
 @customElement("ph-chat-centered-slash")

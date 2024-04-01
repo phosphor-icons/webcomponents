@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-flashlight": PhFlashlight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-flashlight": PhFlashlight;
+    }
+  }
 }
 
 @customElement("ph-flashlight")

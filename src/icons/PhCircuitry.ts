@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-circuitry": PhCircuitry;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-circuitry": PhCircuitry;
+    }
+  }
 }
 
 @customElement("ph-circuitry")

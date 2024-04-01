@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-perspective": PhPerspective;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-perspective": PhPerspective;
+    }
+  }
 }
 
 @customElement("ph-perspective")

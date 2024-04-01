@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-share-fat": PhShareFat;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-share-fat": PhShareFat;
+    }
+  }
 }
 
 @customElement("ph-share-fat")

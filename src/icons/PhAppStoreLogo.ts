@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-app-store-logo": PhAppStoreLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-app-store-logo": PhAppStoreLogo;
+    }
+  }
 }
 
 @customElement("ph-app-store-logo")

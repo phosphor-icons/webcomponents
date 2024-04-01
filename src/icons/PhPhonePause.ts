@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-phone-pause": PhPhonePause;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-phone-pause": PhPhonePause;
+    }
+  }
 }
 
 @customElement("ph-phone-pause")

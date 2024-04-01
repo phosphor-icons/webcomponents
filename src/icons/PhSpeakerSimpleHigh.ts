@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-speaker-simple-high": PhSpeakerSimpleHigh;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-speaker-simple-high": PhSpeakerSimpleHigh;
+    }
+  }
 }
 
 @customElement("ph-speaker-simple-high")

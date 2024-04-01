@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-funnel-simple-x": PhFunnelSimpleX;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-funnel-simple-x": PhFunnelSimpleX;
+    }
+  }
 }
 
 @customElement("ph-funnel-simple-x")

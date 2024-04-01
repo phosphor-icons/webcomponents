@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrow-fat-line-right": PhArrowFatLineRight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrow-fat-line-right": PhArrowFatLineRight;
+    }
+  }
 }
 
 @customElement("ph-arrow-fat-line-right")

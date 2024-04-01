@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-goggles": PhGoggles;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-goggles": PhGoggles;
+    }
+  }
 }
 
 @customElement("ph-goggles")

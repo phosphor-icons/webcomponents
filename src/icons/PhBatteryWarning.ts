@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-battery-warning": PhBatteryWarning;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-battery-warning": PhBatteryWarning;
+    }
+  }
 }
 
 @customElement("ph-battery-warning")

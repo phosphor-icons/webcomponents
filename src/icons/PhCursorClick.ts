@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cursor-click": PhCursorClick;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cursor-click": PhCursorClick;
+    }
+  }
 }
 
 @customElement("ph-cursor-click")

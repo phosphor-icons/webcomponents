@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bowl-steam": PhBowlSteam;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bowl-steam": PhBowlSteam;
+    }
+  }
 }
 
 @customElement("ph-bowl-steam")

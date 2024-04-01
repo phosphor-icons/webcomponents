@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-clipboard": PhClipboard;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-clipboard": PhClipboard;
+    }
+  }
 }
 
 @customElement("ph-clipboard")

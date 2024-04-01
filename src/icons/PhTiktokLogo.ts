@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-tiktok-logo": PhTiktokLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-tiktok-logo": PhTiktokLogo;
+    }
+  }
 }
 
 @customElement("ph-tiktok-logo")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-not-superset-of": PhNotSupersetOf;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-not-superset-of": PhNotSupersetOf;
+    }
+  }
 }
 
 @customElement("ph-not-superset-of")

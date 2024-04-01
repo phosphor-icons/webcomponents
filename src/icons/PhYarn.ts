@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-yarn": PhYarn;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-yarn": PhYarn;
+    }
+  }
 }
 
 @customElement("ph-yarn")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-panorama": PhPanorama;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-panorama": PhPanorama;
+    }
+  }
 }
 
 @customElement("ph-panorama")

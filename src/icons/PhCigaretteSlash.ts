@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cigarette-slash": PhCigaretteSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cigarette-slash": PhCigaretteSlash;
+    }
+  }
 }
 
 @customElement("ph-cigarette-slash")

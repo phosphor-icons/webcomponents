@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-record": PhRecord;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-record": PhRecord;
+    }
+  }
 }
 
 @customElement("ph-record")

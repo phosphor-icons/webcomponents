@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-git-fork": PhGitFork;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-git-fork": PhGitFork;
+    }
+  }
 }
 
 @customElement("ph-git-fork")

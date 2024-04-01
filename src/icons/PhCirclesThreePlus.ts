@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-circles-three-plus": PhCirclesThreePlus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-circles-three-plus": PhCirclesThreePlus;
+    }
+  }
 }
 
 @customElement("ph-circles-three-plus")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-nuclear-plant": PhNuclearPlant;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-nuclear-plant": PhNuclearPlant;
+    }
+  }
 }
 
 @customElement("ph-nuclear-plant")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-article-ny-times": PhArticleNyTimes;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-article-ny-times": PhArticleNyTimes;
+    }
+  }
 }
 
 @customElement("ph-article-ny-times")

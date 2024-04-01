@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-git-diff": PhGitDiff;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-git-diff": PhGitDiff;
+    }
+  }
 }
 
 @customElement("ph-git-diff")

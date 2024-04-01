@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-drop-half-bottom": PhDropHalfBottom;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-drop-half-bottom": PhDropHalfBottom;
+    }
+  }
 }
 
 @customElement("ph-drop-half-bottom")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-checkerboard": PhCheckerboard;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-checkerboard": PhCheckerboard;
+    }
+  }
 }
 
 @customElement("ph-checkerboard")

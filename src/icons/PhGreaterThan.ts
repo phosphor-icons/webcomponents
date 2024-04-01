@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-greater-than": PhGreaterThan;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-greater-than": PhGreaterThan;
+    }
+  }
 }
 
 @customElement("ph-greater-than")

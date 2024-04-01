@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-picture-in-picture": PhPictureInPicture;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-picture-in-picture": PhPictureInPicture;
+    }
+  }
 }
 
 @customElement("ph-picture-in-picture")

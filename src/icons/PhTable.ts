@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-table": PhTable;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-table": PhTable;
+    }
+  }
 }
 
 @customElement("ph-table")

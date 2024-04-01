@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-git-merge": PhGitMerge;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-git-merge": PhGitMerge;
+    }
+  }
 }
 
 @customElement("ph-git-merge")

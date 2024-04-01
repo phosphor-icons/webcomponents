@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-test-tube": PhTestTube;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-test-tube": PhTestTube;
+    }
+  }
 }
 
 @customElement("ph-test-tube")

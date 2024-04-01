@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-subtract": PhSubtract;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-subtract": PhSubtract;
+    }
+  }
 }
 
 @customElement("ph-subtract")

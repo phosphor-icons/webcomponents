@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-highlighter": PhHighlighter;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-highlighter": PhHighlighter;
+    }
+  }
 }
 
 @customElement("ph-highlighter")

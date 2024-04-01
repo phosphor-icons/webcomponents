@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-waveform-slash": PhWaveformSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-waveform-slash": PhWaveformSlash;
+    }
+  }
 }
 
 @customElement("ph-waveform-slash")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-spade": PhSpade;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-spade": PhSpade;
+    }
+  }
 }
 
 @customElement("ph-spade")

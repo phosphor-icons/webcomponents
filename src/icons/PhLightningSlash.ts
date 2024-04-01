@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-lightning-slash": PhLightningSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-lightning-slash": PhLightningSlash;
+    }
+  }
 }
 
 @customElement("ph-lightning-slash")

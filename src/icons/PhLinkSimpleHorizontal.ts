@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-link-simple-horizontal": PhLinkSimpleHorizontal;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-link-simple-horizontal": PhLinkSimpleHorizontal;
+    }
+  }
 }
 
 @customElement("ph-link-simple-horizontal")

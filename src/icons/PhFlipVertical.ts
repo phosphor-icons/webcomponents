@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-flip-vertical": PhFlipVertical;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-flip-vertical": PhFlipVertical;
+    }
+  }
 }
 
 @customElement("ph-flip-vertical")

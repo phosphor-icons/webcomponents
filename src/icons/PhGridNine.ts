@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-grid-nine": PhGridNine;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-grid-nine": PhGridNine;
+    }
+  }
 }
 
 @customElement("ph-grid-nine")

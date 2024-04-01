@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-flow-arrow": PhFlowArrow;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-flow-arrow": PhFlowArrow;
+    }
+  }
 }
 
 @customElement("ph-flow-arrow")

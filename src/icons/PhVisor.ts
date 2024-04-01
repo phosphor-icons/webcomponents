@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-visor": PhVisor;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-visor": PhVisor;
+    }
+  }
 }
 
 @customElement("ph-visor")

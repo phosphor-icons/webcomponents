@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-hand-pointing": PhHandPointing;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-hand-pointing": PhHandPointing;
+    }
+  }
 }
 
 @customElement("ph-hand-pointing")

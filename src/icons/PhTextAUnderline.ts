@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-a-underline": PhTextAUnderline;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-a-underline": PhTextAUnderline;
+    }
+  }
 }
 
 @customElement("ph-text-a-underline")

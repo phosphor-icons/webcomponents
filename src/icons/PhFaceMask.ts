@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-face-mask": PhFaceMask;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-face-mask": PhFaceMask;
+    }
+  }
 }
 
 @customElement("ph-face-mask")

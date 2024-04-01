@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chart-line-down": PhChartLineDown;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chart-line-down": PhChartLineDown;
+    }
+  }
 }
 
 @customElement("ph-chart-line-down")

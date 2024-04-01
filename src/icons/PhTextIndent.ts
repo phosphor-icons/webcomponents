@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-indent": PhTextIndent;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-indent": PhTextIndent;
+    }
+  }
 }
 
 @customElement("ph-text-indent")

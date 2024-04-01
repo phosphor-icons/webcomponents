@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-guitar": PhGuitar;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-guitar": PhGuitar;
+    }
+  }
 }
 
 @customElement("ph-guitar")

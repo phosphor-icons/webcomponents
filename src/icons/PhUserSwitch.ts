@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-user-switch": PhUserSwitch;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-user-switch": PhUserSwitch;
+    }
+  }
 }
 
 @customElement("ph-user-switch")

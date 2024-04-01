@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bezier-curve": PhBezierCurve;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bezier-curve": PhBezierCurve;
+    }
+  }
 }
 
 @customElement("ph-bezier-curve")

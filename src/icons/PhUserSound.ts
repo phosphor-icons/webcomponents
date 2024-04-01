@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-user-sound": PhUserSound;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-user-sound": PhUserSound;
+    }
+  }
 }
 
 @customElement("ph-user-sound")

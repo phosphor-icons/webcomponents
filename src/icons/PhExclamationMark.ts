@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-exclamation-mark": PhExclamationMark;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-exclamation-mark": PhExclamationMark;
+    }
+  }
 }
 
 @customElement("ph-exclamation-mark")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-notification": PhNotification;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-notification": PhNotification;
+    }
+  }
 }
 
 @customElement("ph-notification")

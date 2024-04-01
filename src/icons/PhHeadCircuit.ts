@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-head-circuit": PhHeadCircuit;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-head-circuit": PhHeadCircuit;
+    }
+  }
 }
 
 @customElement("ph-head-circuit")

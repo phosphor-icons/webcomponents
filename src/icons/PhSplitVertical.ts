@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-split-vertical": PhSplitVertical;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-split-vertical": PhSplitVertical;
+    }
+  }
 }
 
 @customElement("ph-split-vertical")

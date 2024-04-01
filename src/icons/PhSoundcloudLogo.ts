@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-soundcloud-logo": PhSoundcloudLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-soundcloud-logo": PhSoundcloudLogo;
+    }
+  }
 }
 
 @customElement("ph-soundcloud-logo")

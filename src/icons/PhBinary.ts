@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-binary": PhBinary;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-binary": PhBinary;
+    }
+  }
 }
 
 @customElement("ph-binary")

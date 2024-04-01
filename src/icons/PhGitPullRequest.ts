@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-git-pull-request": PhGitPullRequest;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-git-pull-request": PhGitPullRequest;
+    }
+  }
 }
 
 @customElement("ph-git-pull-request")

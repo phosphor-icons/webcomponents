@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-file-zip": PhFileZip;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-file-zip": PhFileZip;
+    }
+  }
 }
 
 @customElement("ph-file-zip")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-steering-wheel": PhSteeringWheel;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-steering-wheel": PhSteeringWheel;
+    }
+  }
 }
 
 @customElement("ph-steering-wheel")

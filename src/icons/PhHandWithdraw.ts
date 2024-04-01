@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-hand-withdraw": PhHandWithdraw;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-hand-withdraw": PhHandWithdraw;
+    }
+  }
 }
 
 @customElement("ph-hand-withdraw")

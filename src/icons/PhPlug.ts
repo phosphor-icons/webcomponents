@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-plug": PhPlug;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-plug": PhPlug;
+    }
+  }
 }
 
 @customElement("ph-plug")

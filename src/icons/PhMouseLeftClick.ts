@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-mouse-left-click": PhMouseLeftClick;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-mouse-left-click": PhMouseLeftClick;
+    }
+  }
 }
 
 @customElement("ph-mouse-left-click")

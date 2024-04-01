@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cassette-tape": PhCassetteTape;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cassette-tape": PhCassetteTape;
+    }
+  }
 }
 
 @customElement("ph-cassette-tape")

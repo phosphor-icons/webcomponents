@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-instagram-logo": PhInstagramLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-instagram-logo": PhInstagramLogo;
+    }
+  }
 }
 
 @customElement("ph-instagram-logo")

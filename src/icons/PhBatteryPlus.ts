@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-battery-plus": PhBatteryPlus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-battery-plus": PhBatteryPlus;
+    }
+  }
 }
 
 @customElement("ph-battery-plus")

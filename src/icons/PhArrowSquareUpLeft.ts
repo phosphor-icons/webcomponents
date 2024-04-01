@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrow-square-up-left": PhArrowSquareUpLeft;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrow-square-up-left": PhArrowSquareUpLeft;
+    }
+  }
 }
 
 @customElement("ph-arrow-square-up-left")

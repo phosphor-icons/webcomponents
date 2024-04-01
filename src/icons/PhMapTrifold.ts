@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-map-trifold": PhMapTrifold;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-map-trifold": PhMapTrifold;
+    }
+  }
 }
 
 @customElement("ph-map-trifold")

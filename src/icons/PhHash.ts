@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-hash": PhHash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-hash": PhHash;
+    }
+  }
 }
 
 @customElement("ph-hash")

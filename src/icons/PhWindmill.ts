@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-windmill": PhWindmill;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-windmill": PhWindmill;
+    }
+  }
 }
 
 @customElement("ph-windmill")

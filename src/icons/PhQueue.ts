@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-queue": PhQueue;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-queue": PhQueue;
+    }
+  }
 }
 
 @customElement("ph-queue")

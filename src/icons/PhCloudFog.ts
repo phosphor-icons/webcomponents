@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cloud-fog": PhCloudFog;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cloud-fog": PhCloudFog;
+    }
+  }
 }
 
 @customElement("ph-cloud-fog")

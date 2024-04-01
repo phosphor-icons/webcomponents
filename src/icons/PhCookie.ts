@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cookie": PhCookie;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cookie": PhCookie;
+    }
+  }
 }
 
 @customElement("ph-cookie")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-prescription": PhPrescription;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-prescription": PhPrescription;
+    }
+  }
 }
 
 @customElement("ph-prescription")

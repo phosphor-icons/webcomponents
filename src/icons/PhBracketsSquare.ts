@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-brackets-square": PhBracketsSquare;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-brackets-square": PhBracketsSquare;
+    }
+  }
 }
 
 @customElement("ph-brackets-square")

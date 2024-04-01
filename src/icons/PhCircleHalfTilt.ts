@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-circle-half-tilt": PhCircleHalfTilt;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-circle-half-tilt": PhCircleHalfTilt;
+    }
+  }
 }
 
 @customElement("ph-circle-half-tilt")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-ladder-simple": PhLadderSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-ladder-simple": PhLadderSimple;
+    }
+  }
 }
 
 @customElement("ph-ladder-simple")

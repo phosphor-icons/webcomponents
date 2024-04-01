@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-file-txt": PhFileTxt;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-file-txt": PhFileTxt;
+    }
+  }
 }
 
 @customElement("ph-file-txt")

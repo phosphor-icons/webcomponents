@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-gps-slash": PhGpsSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-gps-slash": PhGpsSlash;
+    }
+  }
 }
 
 @customElement("ph-gps-slash")

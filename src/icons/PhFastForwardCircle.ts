@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-fast-forward-circle": PhFastForwardCircle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-fast-forward-circle": PhFastForwardCircle;
+    }
+  }
 }
 
 @customElement("ph-fast-forward-circle")

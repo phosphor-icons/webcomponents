@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-backspace": PhBackspace;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-backspace": PhBackspace;
+    }
+  }
 }
 
 @customElement("ph-backspace")

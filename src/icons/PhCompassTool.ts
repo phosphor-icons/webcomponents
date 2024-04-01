@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-compass-tool": PhCompassTool;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-compass-tool": PhCompassTool;
+    }
+  }
 }
 
 @customElement("ph-compass-tool")

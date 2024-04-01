@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-dropbox-logo": PhDropboxLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-dropbox-logo": PhDropboxLogo;
+    }
+  }
 }
 
 @customElement("ph-dropbox-logo")

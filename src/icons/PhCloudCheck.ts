@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cloud-check": PhCloudCheck;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cloud-check": PhCloudCheck;
+    }
+  }
 }
 
 @customElement("ph-cloud-check")

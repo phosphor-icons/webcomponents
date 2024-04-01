@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-gif": PhGif;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-gif": PhGif;
+    }
+  }
 }
 
 @customElement("ph-gif")

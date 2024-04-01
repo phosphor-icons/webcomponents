@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pause-circle": PhPauseCircle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pause-circle": PhPauseCircle;
+    }
+  }
 }
 
 @customElement("ph-pause-circle")

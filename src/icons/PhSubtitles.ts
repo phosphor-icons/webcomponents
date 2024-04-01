@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-subtitles": PhSubtitles;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-subtitles": PhSubtitles;
+    }
+  }
 }
 
 @customElement("ph-subtitles")

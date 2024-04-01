@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chart-bar-horizontal": PhChartBarHorizontal;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chart-bar-horizontal": PhChartBarHorizontal;
+    }
+  }
 }
 
 @customElement("ph-chart-bar-horizontal")

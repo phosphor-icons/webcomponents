@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-blueprint": PhBlueprint;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-blueprint": PhBlueprint;
+    }
+  }
 }
 
 @customElement("ph-blueprint")

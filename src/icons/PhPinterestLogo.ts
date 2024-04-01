@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pinterest-logo": PhPinterestLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pinterest-logo": PhPinterestLogo;
+    }
+  }
 }
 
 @customElement("ph-pinterest-logo")

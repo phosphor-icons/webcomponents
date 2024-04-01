@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-traffic-signal": PhTrafficSignal;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-traffic-signal": PhTrafficSignal;
+    }
+  }
 }
 
 @customElement("ph-traffic-signal")

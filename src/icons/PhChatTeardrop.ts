@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chat-teardrop": PhChatTeardrop;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chat-teardrop": PhChatTeardrop;
+    }
+  }
 }
 
 @customElement("ph-chat-teardrop")

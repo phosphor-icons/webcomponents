@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cube-focus": PhCubeFocus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cube-focus": PhCubeFocus;
+    }
+  }
 }
 
 @customElement("ph-cube-focus")

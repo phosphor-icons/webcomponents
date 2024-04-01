@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-rows-plus-top": PhRowsPlusTop;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-rows-plus-top": PhRowsPlusTop;
+    }
+  }
 }
 
 @customElement("ph-rows-plus-top")

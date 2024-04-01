@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-high-definition": PhHighDefinition;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-high-definition": PhHighDefinition;
+    }
+  }
 }
 
 @customElement("ph-high-definition")

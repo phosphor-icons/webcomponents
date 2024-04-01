@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-screencast": PhScreencast;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-screencast": PhScreencast;
+    }
+  }
 }
 
 @customElement("ph-screencast")

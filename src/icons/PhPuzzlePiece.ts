@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-puzzle-piece": PhPuzzlePiece;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-puzzle-piece": PhPuzzlePiece;
+    }
+  }
 }
 
 @customElement("ph-puzzle-piece")

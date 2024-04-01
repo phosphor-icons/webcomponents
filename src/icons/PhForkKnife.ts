@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-fork-knife": PhForkKnife;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-fork-knife": PhForkKnife;
+    }
+  }
 }
 
 @customElement("ph-fork-knife")

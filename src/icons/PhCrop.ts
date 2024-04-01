@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-crop": PhCrop;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-crop": PhCrop;
+    }
+  }
 }
 
 @customElement("ph-crop")

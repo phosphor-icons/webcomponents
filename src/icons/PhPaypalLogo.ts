@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paypal-logo": PhPaypalLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paypal-logo": PhPaypalLogo;
+    }
+  }
 }
 
 @customElement("ph-paypal-logo")

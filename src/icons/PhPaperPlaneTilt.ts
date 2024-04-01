@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paper-plane-tilt": PhPaperPlaneTilt;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paper-plane-tilt": PhPaperPlaneTilt;
+    }
+  }
 }
 
 @customElement("ph-paper-plane-tilt")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-currency-jpy": PhCurrencyJpy;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-currency-jpy": PhCurrencyJpy;
+    }
+  }
 }
 
 @customElement("ph-currency-jpy")

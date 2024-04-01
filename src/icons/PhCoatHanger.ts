@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-coat-hanger": PhCoatHanger;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-coat-hanger": PhCoatHanger;
+    }
+  }
 }
 
 @customElement("ph-coat-hanger")

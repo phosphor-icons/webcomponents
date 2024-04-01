@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-piano-keys": PhPianoKeys;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-piano-keys": PhPianoKeys;
+    }
+  }
 }
 
 @customElement("ph-piano-keys")

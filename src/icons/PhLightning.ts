@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-lightning": PhLightning;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-lightning": PhLightning;
+    }
+  }
 }
 
 @customElement("ph-lightning")

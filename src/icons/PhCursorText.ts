@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cursor-text": PhCursorText;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cursor-text": PhCursorText;
+    }
+  }
 }
 
 @customElement("ph-cursor-text")

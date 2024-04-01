@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-youtube-logo": PhYoutubeLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-youtube-logo": PhYoutubeLogo;
+    }
+  }
 }
 
 @customElement("ph-youtube-logo")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-film-reel": PhFilmReel;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-film-reel": PhFilmReel;
+    }
+  }
 }
 
 @customElement("ph-film-reel")

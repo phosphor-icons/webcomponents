@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-git-branch": PhGitBranch;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-git-branch": PhGitBranch;
+    }
+  }
 }
 
 @customElement("ph-git-branch")

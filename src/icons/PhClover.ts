@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-clover": PhClover;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-clover": PhClover;
+    }
+  }
 }
 
 @customElement("ph-clover")

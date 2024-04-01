@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-floppy-disk-back": PhFloppyDiskBack;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-floppy-disk-back": PhFloppyDiskBack;
+    }
+  }
 }
 
 @customElement("ph-floppy-disk-back")

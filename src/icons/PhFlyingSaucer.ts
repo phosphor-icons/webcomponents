@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-flying-saucer": PhFlyingSaucer;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-flying-saucer": PhFlyingSaucer;
+    }
+  }
 }
 
 @customElement("ph-flying-saucer")

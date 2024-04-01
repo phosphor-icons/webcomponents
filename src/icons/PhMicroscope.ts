@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-microscope": PhMicroscope;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-microscope": PhMicroscope;
+    }
+  }
 }
 
 @customElement("ph-microscope")

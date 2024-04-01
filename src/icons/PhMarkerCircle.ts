@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-marker-circle": PhMarkerCircle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-marker-circle": PhMarkerCircle;
+    }
+  }
 }
 
 @customElement("ph-marker-circle")

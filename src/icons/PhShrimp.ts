@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shrimp": PhShrimp;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shrimp": PhShrimp;
+    }
+  }
 }
 
 @customElement("ph-shrimp")

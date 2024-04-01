@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-check-fat": PhCheckFat;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-check-fat": PhCheckFat;
+    }
+  }
 }
 
 @customElement("ph-check-fat")

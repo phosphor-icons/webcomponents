@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shield-checkered": PhShieldCheckered;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shield-checkered": PhShieldCheckered;
+    }
+  }
 }
 
 @customElement("ph-shield-checkered")

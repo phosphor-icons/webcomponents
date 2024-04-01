@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-virtual-reality": PhVirtualReality;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-virtual-reality": PhVirtualReality;
+    }
+  }
 }
 
 @customElement("ph-virtual-reality")

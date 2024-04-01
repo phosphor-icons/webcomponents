@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-palette": PhPalette;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-palette": PhPalette;
+    }
+  }
 }
 
 @customElement("ph-palette")

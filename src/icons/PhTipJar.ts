@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-tip-jar": PhTipJar;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-tip-jar": PhTipJar;
+    }
+  }
 }
 
 @customElement("ph-tip-jar")

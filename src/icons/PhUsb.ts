@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-usb": PhUsb;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-usb": PhUsb;
+    }
+  }
 }
 
 @customElement("ph-usb")

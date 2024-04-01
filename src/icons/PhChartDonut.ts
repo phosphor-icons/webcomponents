@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chart-donut": PhChartDonut;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chart-donut": PhChartDonut;
+    }
+  }
 }
 
 @customElement("ph-chart-donut")

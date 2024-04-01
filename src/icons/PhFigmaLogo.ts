@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-figma-logo": PhFigmaLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-figma-logo": PhFigmaLogo;
+    }
+  }
 }
 
 @customElement("ph-figma-logo")

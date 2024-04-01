@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-orange-slice": PhOrangeSlice;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-orange-slice": PhOrangeSlice;
+    }
+  }
 }
 
 @customElement("ph-orange-slice")

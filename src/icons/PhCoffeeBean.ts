@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-coffee-bean": PhCoffeeBean;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-coffee-bean": PhCoffeeBean;
+    }
+  }
 }
 
 @customElement("ph-coffee-bean")

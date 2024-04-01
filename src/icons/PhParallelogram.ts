@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-parallelogram": PhParallelogram;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-parallelogram": PhParallelogram;
+    }
+  }
 }
 
 @customElement("ph-parallelogram")

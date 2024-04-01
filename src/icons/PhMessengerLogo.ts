@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-messenger-logo": PhMessengerLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-messenger-logo": PhMessengerLogo;
+    }
+  }
 }
 
 @customElement("ph-messenger-logo")

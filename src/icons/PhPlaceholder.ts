@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-placeholder": PhPlaceholder;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-placeholder": PhPlaceholder;
+    }
+  }
 }
 
 @customElement("ph-placeholder")

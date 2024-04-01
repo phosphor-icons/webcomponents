@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-baby-carriage": PhBabyCarriage;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-baby-carriage": PhBabyCarriage;
+    }
+  }
 }
 
 @customElement("ph-baby-carriage")

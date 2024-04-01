@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-stop": PhStop;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-stop": PhStop;
+    }
+  }
 }
 
 @customElement("ph-stop")

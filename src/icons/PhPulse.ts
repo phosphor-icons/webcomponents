@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pulse": PhPulse;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pulse": PhPulse;
+    }
+  }
 }
 
 @customElement("ph-pulse")

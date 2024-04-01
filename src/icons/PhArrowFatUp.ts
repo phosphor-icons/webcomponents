@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrow-fat-up": PhArrowFatUp;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrow-fat-up": PhArrowFatUp;
+    }
+  }
 }
 
 @customElement("ph-arrow-fat-up")

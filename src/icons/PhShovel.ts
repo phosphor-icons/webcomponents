@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shovel": PhShovel;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shovel": PhShovel;
+    }
+  }
 }
 
 @customElement("ph-shovel")

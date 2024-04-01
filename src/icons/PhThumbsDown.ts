@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-thumbs-down": PhThumbsDown;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-thumbs-down": PhThumbsDown;
+    }
+  }
 }
 
 @customElement("ph-thumbs-down")

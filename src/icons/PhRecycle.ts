@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-recycle": PhRecycle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-recycle": PhRecycle;
+    }
+  }
 }
 
 @customElement("ph-recycle")

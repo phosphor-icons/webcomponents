@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-line-vertical": PhLineVertical;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-line-vertical": PhLineVertical;
+    }
+  }
 }
 
 @customElement("ph-line-vertical")

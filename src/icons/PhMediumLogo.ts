@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-medium-logo": PhMediumLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-medium-logo": PhMediumLogo;
+    }
+  }
 }
 
 @customElement("ph-medium-logo")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-eject": PhEject;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-eject": PhEject;
+    }
+  }
 }
 
 @customElement("ph-eject")

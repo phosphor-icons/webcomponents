@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-italic": PhTextItalic;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-italic": PhTextItalic;
+    }
+  }
 }
 
 @customElement("ph-text-italic")

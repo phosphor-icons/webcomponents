@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chart-pie-slice": PhChartPieSlice;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chart-pie-slice": PhChartPieSlice;
+    }
+  }
 }
 
 @customElement("ph-chart-pie-slice")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-phone-slash": PhPhoneSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-phone-slash": PhPhoneSlash;
+    }
+  }
 }
 
 @customElement("ph-phone-slash")

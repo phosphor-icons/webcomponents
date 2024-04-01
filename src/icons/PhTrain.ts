@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-train": PhTrain;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-train": PhTrain;
+    }
+  }
 }
 
 @customElement("ph-train")

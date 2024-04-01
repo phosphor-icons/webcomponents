@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-lectern": PhLectern;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-lectern": PhLectern;
+    }
+  }
 }
 
 @customElement("ph-lectern")

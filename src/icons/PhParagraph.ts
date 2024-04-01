@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paragraph": PhParagraph;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paragraph": PhParagraph;
+    }
+  }
 }
 
 @customElement("ph-paragraph")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-git-commit": PhGitCommit;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-git-commit": PhGitCommit;
+    }
+  }
 }
 
 @customElement("ph-git-commit")

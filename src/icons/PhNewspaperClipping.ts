@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-newspaper-clipping": PhNewspaperClipping;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-newspaper-clipping": PhNewspaperClipping;
+    }
+  }
 }
 
 @customElement("ph-newspaper-clipping")

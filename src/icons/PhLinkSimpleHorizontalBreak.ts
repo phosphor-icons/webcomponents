@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-link-simple-horizontal-break": PhLinkSimpleHorizontalBreak;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-link-simple-horizontal-break": PhLinkSimpleHorizontalBreak;
+    }
+  }
 }
 
 @customElement("ph-link-simple-horizontal-break")

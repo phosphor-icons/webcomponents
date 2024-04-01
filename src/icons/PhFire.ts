@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-fire": PhFire;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-fire": PhFire;
+    }
+  }
 }
 
 @customElement("ph-fire")

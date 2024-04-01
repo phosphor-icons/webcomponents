@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-asterisk-simple": PhAsteriskSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-asterisk-simple": PhAsteriskSimple;
+    }
+  }
 }
 
 @customElement("ph-asterisk-simple")

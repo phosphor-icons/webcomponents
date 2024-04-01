@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-tree": PhTree;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-tree": PhTree;
+    }
+  }
 }
 
 @customElement("ph-tree")

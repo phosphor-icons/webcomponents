@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-file-vue": PhFileVue;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-file-vue": PhFileVue;
+    }
+  }
 }
 
 @customElement("ph-file-vue")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-tree-evergreen": PhTreeEvergreen;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-tree-evergreen": PhTreeEvergreen;
+    }
+  }
 }
 
 @customElement("ph-tree-evergreen")

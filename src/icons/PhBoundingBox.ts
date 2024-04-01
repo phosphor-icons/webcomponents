@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bounding-box": PhBoundingBox;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bounding-box": PhBoundingBox;
+    }
+  }
 }
 
 @customElement("ph-bounding-box")

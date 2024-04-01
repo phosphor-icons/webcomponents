@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-spinner": PhSpinner;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-spinner": PhSpinner;
+    }
+  }
 }
 
 @customElement("ph-spinner")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bridge": PhBridge;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bridge": PhBridge;
+    }
+  }
 }
 
 @customElement("ph-bridge")

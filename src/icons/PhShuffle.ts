@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shuffle": PhShuffle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shuffle": PhShuffle;
+    }
+  }
 }
 
 @customElement("ph-shuffle")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-link": PhLink;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-link": PhLink;
+    }
+  }
 }
 
 @customElement("ph-link")

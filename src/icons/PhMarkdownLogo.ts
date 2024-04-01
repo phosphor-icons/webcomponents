@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-markdown-logo": PhMarkdownLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-markdown-logo": PhMarkdownLogo;
+    }
+  }
 }
 
 @customElement("ph-markdown-logo")

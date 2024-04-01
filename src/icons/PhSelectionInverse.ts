@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-selection-inverse": PhSelectionInverse;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-selection-inverse": PhSelectionInverse;
+    }
+  }
 }
 
 @customElement("ph-selection-inverse")

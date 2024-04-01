@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-align-center": PhTextAlignCenter;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-align-center": PhTextAlignCenter;
+    }
+  }
 }
 
 @customElement("ph-text-align-center")

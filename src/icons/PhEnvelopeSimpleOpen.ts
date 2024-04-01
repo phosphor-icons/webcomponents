@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-envelope-simple-open": PhEnvelopeSimpleOpen;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-envelope-simple-open": PhEnvelopeSimpleOpen;
+    }
+  }
 }
 
 @customElement("ph-envelope-simple-open")

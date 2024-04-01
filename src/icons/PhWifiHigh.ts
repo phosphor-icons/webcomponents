@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-wifi-high": PhWifiHigh;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-wifi-high": PhWifiHigh;
+    }
+  }
 }
 
 @customElement("ph-wifi-high")

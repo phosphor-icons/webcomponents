@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-currency-dollar-simple": PhCurrencyDollarSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-currency-dollar-simple": PhCurrencyDollarSimple;
+    }
+  }
 }
 
 @customElement("ph-currency-dollar-simple")

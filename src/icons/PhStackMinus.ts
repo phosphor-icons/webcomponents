@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-stack-minus": PhStackMinus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-stack-minus": PhStackMinus;
+    }
+  }
 }
 
 @customElement("ph-stack-minus")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-grid-four": PhGridFour;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-grid-four": PhGridFour;
+    }
+  }
 }
 
 @customElement("ph-grid-four")

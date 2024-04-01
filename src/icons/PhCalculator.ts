@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-calculator": PhCalculator;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-calculator": PhCalculator;
+    }
+  }
 }
 
 @customElement("ph-calculator")

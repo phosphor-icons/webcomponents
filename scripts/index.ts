@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import chalk from "chalk";
-import { IconStyle, icons } from "../core/src";
+import * as Core from "../core/src";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,16 +11,20 @@ export const EXAMPLE_PATH = path.join(__dirname, "../index.html");
 export const ASSETS_PATH = path.join(__dirname, "../core/assets");
 export const COMPONENTS_PATH = path.join(__dirname, "../src/icons");
 export const INDEX_PATH = path.join(__dirname, "../src/index.ts");
-export const WEIGHTS = Object.values(IconStyle);
+export const WEIGHTS = Object.values(
+  (Core as unknown as { default: typeof Core }).default.IconStyle
+);
 
-export const ALIASES = icons.reduce<Record<string, string>>((acc, curr) => {
+export const ALIASES = (
+  Core as unknown as { default: typeof Core }
+).default.icons.reduce<Record<string, string>>((acc, curr) => {
   if ((curr as any).alias) {
     acc[curr.name] = (curr as any).alias.name;
   }
   return acc;
 }, {});
 
-export type AssetMap = Record<string, Record<IconStyle, string>>;
+export type AssetMap = Record<string, Record<Core.IconStyle, string>>;
 
 export function readAssetsFromDisk(): AssetMap {
   console.log(ASSETS_PATH);
@@ -32,7 +36,7 @@ export function readAssetsFromDisk(): AssetMap {
     if (!fs.lstatSync(path.join(ASSETS_PATH, `./${weight}`)).isDirectory())
       return;
 
-    if (!WEIGHTS.includes(weight as IconStyle)) {
+    if (!WEIGHTS.includes(weight as Core.IconStyle)) {
       console.error(`${chalk.inverse.red(" ERR ")} Bad folder name ${weight}`);
       process.exit(1);
     }
@@ -84,7 +88,7 @@ export function verifyIcons(icons: AssetMap) {
       !(
         weightsPresent.length === 6 &&
         weightsPresent.every(
-          (w) => WEIGHTS.includes(w as IconStyle) && !!icon[w]
+          (w) => WEIGHTS.includes(w as Core.IconStyle) && !!icon[w]
         )
       )
     ) {

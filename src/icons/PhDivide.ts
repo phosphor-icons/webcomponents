@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-divide": PhDivide;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-divide": PhDivide;
+    }
+  }
 }
 
 @customElement("ph-divide")

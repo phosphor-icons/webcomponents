@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-basket": PhBasket;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-basket": PhBasket;
+    }
+  }
 }
 
 @customElement("ph-basket")

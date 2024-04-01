@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chart-polar": PhChartPolar;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chart-polar": PhChartPolar;
+    }
+  }
 }
 
 @customElement("ph-chart-polar")

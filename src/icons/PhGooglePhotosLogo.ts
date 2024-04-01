@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-google-photos-logo": PhGooglePhotosLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-google-photos-logo": PhGooglePhotosLogo;
+    }
+  }
 }
 
 @customElement("ph-google-photos-logo")

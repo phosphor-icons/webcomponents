@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cell-tower": PhCellTower;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cell-tower": PhCellTower;
+    }
+  }
 }
 
 @customElement("ph-cell-tower")

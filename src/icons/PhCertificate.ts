@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-certificate": PhCertificate;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-certificate": PhCertificate;
+    }
+  }
 }
 
 @customElement("ph-certificate")

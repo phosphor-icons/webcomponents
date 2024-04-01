@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-phone-disconnect": PhPhoneDisconnect;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-phone-disconnect": PhPhoneDisconnect;
+    }
+  }
 }
 
 @customElement("ph-phone-disconnect")

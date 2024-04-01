@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-linux-logo": PhLinuxLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-linux-logo": PhLinuxLogo;
+    }
+  }
 }
 
 @customElement("ph-linux-logo")

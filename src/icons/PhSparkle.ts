@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sparkle": PhSparkle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sparkle": PhSparkle;
+    }
+  }
 }
 
 @customElement("ph-sparkle")

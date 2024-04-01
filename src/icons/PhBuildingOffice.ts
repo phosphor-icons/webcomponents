@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-building-office": PhBuildingOffice;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-building-office": PhBuildingOffice;
+    }
+  }
 }
 
 @customElement("ph-building-office")

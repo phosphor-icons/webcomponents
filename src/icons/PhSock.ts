@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sock": PhSock;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sock": PhSock;
+    }
+  }
 }
 
 @customElement("ph-sock")

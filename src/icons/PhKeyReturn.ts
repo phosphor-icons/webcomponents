@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-key-return": PhKeyReturn;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-key-return": PhKeyReturn;
+    }
+  }
 }
 
 @customElement("ph-key-return")

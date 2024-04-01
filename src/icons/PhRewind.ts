@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-rewind": PhRewind;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-rewind": PhRewind;
+    }
+  }
 }
 
 @customElement("ph-rewind")

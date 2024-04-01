@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sort-ascending": PhSortAscending;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sort-ascending": PhSortAscending;
+    }
+  }
 }
 
 @customElement("ph-sort-ascending")

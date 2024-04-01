@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cube-transparent": PhCubeTransparent;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cube-transparent": PhCubeTransparent;
+    }
+  }
 }
 
 @customElement("ph-cube-transparent")

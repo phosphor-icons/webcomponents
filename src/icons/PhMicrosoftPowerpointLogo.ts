@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-microsoft-powerpoint-logo": PhMicrosoftPowerpointLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-microsoft-powerpoint-logo": PhMicrosoftPowerpointLogo;
+    }
+  }
 }
 
 @customElement("ph-microsoft-powerpoint-logo")

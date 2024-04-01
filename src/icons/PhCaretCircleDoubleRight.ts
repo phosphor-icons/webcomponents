@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-caret-circle-double-right": PhCaretCircleDoubleRight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-caret-circle-double-right": PhCaretCircleDoubleRight;
+    }
+  }
 }
 
 @customElement("ph-caret-circle-double-right")

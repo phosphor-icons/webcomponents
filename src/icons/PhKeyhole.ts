@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-keyhole": PhKeyhole;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-keyhole": PhKeyhole;
+    }
+  }
 }
 
 @customElement("ph-keyhole")

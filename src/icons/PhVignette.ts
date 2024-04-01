@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-vignette": PhVignette;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-vignette": PhVignette;
+    }
+  }
 }
 
 @customElement("ph-vignette")

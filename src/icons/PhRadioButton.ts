@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-radio-button": PhRadioButton;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-radio-button": PhRadioButton;
+    }
+  }
 }
 
 @customElement("ph-radio-button")

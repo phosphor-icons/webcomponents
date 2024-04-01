@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-webhooks-logo": PhWebhooksLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-webhooks-logo": PhWebhooksLogo;
+    }
+  }
 }
 
 @customElement("ph-webhooks-logo")

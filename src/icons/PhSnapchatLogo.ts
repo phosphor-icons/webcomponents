@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-snapchat-logo": PhSnapchatLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-snapchat-logo": PhSnapchatLogo;
+    }
+  }
 }
 
 @customElement("ph-snapchat-logo")

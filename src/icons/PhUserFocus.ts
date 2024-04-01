@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-user-focus": PhUserFocus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-user-focus": PhUserFocus;
+    }
+  }
 }
 
 @customElement("ph-user-focus")

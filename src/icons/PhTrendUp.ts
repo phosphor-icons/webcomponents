@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-trend-up": PhTrendUp;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-trend-up": PhTrendUp;
+    }
+  }
 }
 
 @customElement("ph-trend-up")

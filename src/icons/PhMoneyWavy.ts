@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-money-wavy": PhMoneyWavy;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-money-wavy": PhMoneyWavy;
+    }
+  }
 }
 
 @customElement("ph-money-wavy")

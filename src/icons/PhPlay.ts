@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-play": PhPlay;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-play": PhPlay;
+    }
+  }
 }
 
 @customElement("ph-play")

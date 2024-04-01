@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-aperture": PhAperture;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-aperture": PhAperture;
+    }
+  }
 }
 
 @customElement("ph-aperture")

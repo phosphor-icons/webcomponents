@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-gitlab-logo-simple": PhGitlabLogoSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-gitlab-logo-simple": PhGitlabLogoSimple;
+    }
+  }
 }
 
 @customElement("ph-gitlab-logo-simple")

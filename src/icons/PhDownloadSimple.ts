@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-download-simple": PhDownloadSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-download-simple": PhDownloadSimple;
+    }
+  }
 }
 
 @customElement("ph-download-simple")

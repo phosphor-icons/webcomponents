@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-megaphone": PhMegaphone;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-megaphone": PhMegaphone;
+    }
+  }
 }
 
 @customElement("ph-megaphone")

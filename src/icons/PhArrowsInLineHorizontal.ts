@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrows-in-line-horizontal": PhArrowsInLineHorizontal;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrows-in-line-horizontal": PhArrowsInLineHorizontal;
+    }
+  }
 }
 
 @customElement("ph-arrows-in-line-horizontal")

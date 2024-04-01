@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-music-notes-minus": PhMusicNotesMinus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-music-notes-minus": PhMusicNotesMinus;
+    }
+  }
 }
 
 @customElement("ph-music-notes-minus")

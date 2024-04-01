@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-superset-proper-of": PhSupersetProperOf;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-superset-proper-of": PhSupersetProperOf;
+    }
+  }
 }
 
 @customElement("ph-superset-proper-of")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-waveform": PhWaveform;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-waveform": PhWaveform;
+    }
+  }
 }
 
 @customElement("ph-waveform")

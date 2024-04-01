@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-qr-code": PhQrCode;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-qr-code": PhQrCode;
+    }
+  }
 }
 
 @customElement("ph-qr-code")

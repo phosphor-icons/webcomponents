@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-battery-vertical-medium": PhBatteryVerticalMedium;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-battery-vertical-medium": PhBatteryVerticalMedium;
+    }
+  }
 }
 
 @customElement("ph-battery-vertical-medium")

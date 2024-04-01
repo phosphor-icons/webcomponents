@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bird": PhBird;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bird": PhBird;
+    }
+  }
 }
 
 @customElement("ph-bird")

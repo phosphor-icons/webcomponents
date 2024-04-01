@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-user-circle-dashed": PhUserCircleDashed;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-user-circle-dashed": PhUserCircleDashed;
+    }
+  }
 }
 
 @customElement("ph-user-circle-dashed")

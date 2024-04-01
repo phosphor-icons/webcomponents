@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sticker": PhSticker;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sticker": PhSticker;
+    }
+  }
 }
 
 @customElement("ph-sticker")

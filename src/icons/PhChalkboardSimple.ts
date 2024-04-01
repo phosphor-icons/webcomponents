@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-chalkboard-simple": PhChalkboardSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-chalkboard-simple": PhChalkboardSimple;
+    }
+  }
 }
 
 @customElement("ph-chalkboard-simple")

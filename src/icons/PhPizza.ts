@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pizza": PhPizza;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pizza": PhPizza;
+    }
+  }
 }
 
 @customElement("ph-pizza")

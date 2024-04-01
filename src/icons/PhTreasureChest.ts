@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-treasure-chest": PhTreasureChest;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-treasure-chest": PhTreasureChest;
+    }
+  }
 }
 
 @customElement("ph-treasure-chest")

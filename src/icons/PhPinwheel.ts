@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pinwheel": PhPinwheel;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pinwheel": PhPinwheel;
+    }
+  }
 }
 
 @customElement("ph-pinwheel")

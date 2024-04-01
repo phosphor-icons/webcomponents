@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-graduation-cap": PhGraduationCap;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-graduation-cap": PhGraduationCap;
+    }
+  }
 }
 
 @customElement("ph-graduation-cap")

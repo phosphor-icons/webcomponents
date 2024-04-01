@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-coda-logo": PhCodaLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-coda-logo": PhCodaLogo;
+    }
+  }
 }
 
 @customElement("ph-coda-logo")

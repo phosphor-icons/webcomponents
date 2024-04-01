@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-timer": PhTimer;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-timer": PhTimer;
+    }
+  }
 }
 
 @customElement("ph-timer")

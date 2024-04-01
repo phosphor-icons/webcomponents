@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-fast-forward": PhFastForward;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-fast-forward": PhFastForward;
+    }
+  }
 }
 
 @customElement("ph-fast-forward")

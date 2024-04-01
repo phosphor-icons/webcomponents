@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrows-split": PhArrowsSplit;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrows-split": PhArrowsSplit;
+    }
+  }
 }
 
 @customElement("ph-arrows-split")

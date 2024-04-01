@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-notion-logo": PhNotionLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-notion-logo": PhNotionLogo;
+    }
+  }
 }
 
 @customElement("ph-notion-logo")

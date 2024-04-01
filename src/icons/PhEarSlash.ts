@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-ear-slash": PhEarSlash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-ear-slash": PhEarSlash;
+    }
+  }
 }
 
 @customElement("ph-ear-slash")

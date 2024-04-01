@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-film-script": PhFilmScript;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-film-script": PhFilmScript;
+    }
+  }
 }
 
 @customElement("ph-film-script")

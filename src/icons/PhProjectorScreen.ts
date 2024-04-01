@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-projector-screen": PhProjectorScreen;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-projector-screen": PhProjectorScreen;
+    }
+  }
 }
 
 @customElement("ph-projector-screen")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-check-square": PhCheckSquare;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-check-square": PhCheckSquare;
+    }
+  }
 }
 
 @customElement("ph-check-square")

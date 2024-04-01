@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-printer": PhPrinter;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-printer": PhPrinter;
+    }
+  }
 }
 
 @customElement("ph-printer")

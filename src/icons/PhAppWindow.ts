@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-app-window": PhAppWindow;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-app-window": PhAppWindow;
+    }
+  }
 }
 
 @customElement("ph-app-window")

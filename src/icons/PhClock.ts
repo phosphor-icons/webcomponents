@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-clock": PhClock;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-clock": PhClock;
+    }
+  }
 }
 
 @customElement("ph-clock")

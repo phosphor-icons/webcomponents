@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-note-blank": PhNoteBlank;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-note-blank": PhNoteBlank;
+    }
+  }
 }
 
 @customElement("ph-note-blank")

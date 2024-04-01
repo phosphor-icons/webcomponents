@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-link-break": PhLinkBreak;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-link-break": PhLinkBreak;
+    }
+  }
 }
 
 @customElement("ph-link-break")

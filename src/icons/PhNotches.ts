@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-notches": PhNotches;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-notches": PhNotches;
+    }
+  }
 }
 
 @customElement("ph-notches")

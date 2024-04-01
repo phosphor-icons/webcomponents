@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-layout": PhLayout;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-layout": PhLayout;
+    }
+  }
 }
 
 @customElement("ph-layout")

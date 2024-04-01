@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-not-subset-of": PhNotSubsetOf;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-not-subset-of": PhNotSubsetOf;
+    }
+  }
 }
 
 @customElement("ph-not-subset-of")

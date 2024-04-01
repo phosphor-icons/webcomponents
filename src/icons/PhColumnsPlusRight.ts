@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-columns-plus-right": PhColumnsPlusRight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-columns-plus-right": PhColumnsPlusRight;
+    }
+  }
 }
 
 @customElement("ph-columns-plus-right")

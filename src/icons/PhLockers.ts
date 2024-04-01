@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-lockers": PhLockers;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-lockers": PhLockers;
+    }
+  }
 }
 
 @customElement("ph-lockers")

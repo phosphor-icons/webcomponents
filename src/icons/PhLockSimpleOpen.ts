@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-lock-simple-open": PhLockSimpleOpen;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-lock-simple-open": PhLockSimpleOpen;
+    }
+  }
 }
 
 @customElement("ph-lock-simple-open")

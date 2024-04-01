@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-closed-captioning": PhClosedCaptioning;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-closed-captioning": PhClosedCaptioning;
+    }
+  }
 }
 
 @customElement("ph-closed-captioning")

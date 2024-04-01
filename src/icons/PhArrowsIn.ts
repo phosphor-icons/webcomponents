@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrows-in": PhArrowsIn;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrows-in": PhArrowsIn;
+    }
+  }
 }
 
 @customElement("ph-arrows-in")

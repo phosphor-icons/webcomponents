@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-broadcast": PhBroadcast;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-broadcast": PhBroadcast;
+    }
+  }
 }
 
 @customElement("ph-broadcast")

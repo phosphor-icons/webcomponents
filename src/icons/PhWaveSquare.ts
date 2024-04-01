@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-wave-square": PhWaveSquare;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-wave-square": PhWaveSquare;
+    }
+  }
 }
 
 @customElement("ph-wave-square")

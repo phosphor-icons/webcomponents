@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-superscript": PhTextSuperscript;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-superscript": PhTextSuperscript;
+    }
+  }
 }
 
 @customElement("ph-text-superscript")

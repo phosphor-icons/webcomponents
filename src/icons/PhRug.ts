@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-rug": PhRug;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-rug": PhRug;
+    }
+  }
 }
 
 @customElement("ph-rug")

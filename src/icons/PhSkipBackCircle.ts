@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-skip-back-circle": PhSkipBackCircle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-skip-back-circle": PhSkipBackCircle;
+    }
+  }
 }
 
 @customElement("ph-skip-back-circle")

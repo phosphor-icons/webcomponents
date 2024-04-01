@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bug-beetle": PhBugBeetle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bug-beetle": PhBugBeetle;
+    }
+  }
 }
 
 @customElement("ph-bug-beetle")

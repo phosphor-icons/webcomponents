@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-copyright": PhCopyright;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-copyright": PhCopyright;
+    }
+  }
 }
 
 @customElement("ph-copyright")

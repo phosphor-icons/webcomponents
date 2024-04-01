@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-subscript": PhTextSubscript;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-subscript": PhTextSubscript;
+    }
+  }
 }
 
 @customElement("ph-text-subscript")

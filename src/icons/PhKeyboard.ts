@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-keyboard": PhKeyboard;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-keyboard": PhKeyboard;
+    }
+  }
 }
 
 @customElement("ph-keyboard")

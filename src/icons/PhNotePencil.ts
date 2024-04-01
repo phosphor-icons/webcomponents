@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-note-pencil": PhNotePencil;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-note-pencil": PhNotePencil;
+    }
+  }
 }
 
 @customElement("ph-note-pencil")

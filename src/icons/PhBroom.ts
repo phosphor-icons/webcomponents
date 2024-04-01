@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-broom": PhBroom;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-broom": PhBroom;
+    }
+  }
 }
 
 @customElement("ph-broom")

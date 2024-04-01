@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-backpack": PhBackpack;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-backpack": PhBackpack;
+    }
+  }
 }
 
 @customElement("ph-backpack")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-triangle-dashed": PhTriangleDashed;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-triangle-dashed": PhTriangleDashed;
+    }
+  }
 }
 
 @customElement("ph-triangle-dashed")

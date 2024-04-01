@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-dot-outline": PhDotOutline;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-dot-outline": PhDotOutline;
+    }
+  }
 }
 
 @customElement("ph-dot-outline")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-snowflake": PhSnowflake;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-snowflake": PhSnowflake;
+    }
+  }
 }
 
 @customElement("ph-snowflake")

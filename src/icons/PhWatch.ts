@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-watch": PhWatch;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-watch": PhWatch;
+    }
+  }
 }
 
 @customElement("ph-watch")

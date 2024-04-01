@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-vault": PhVault;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-vault": PhVault;
+    }
+  }
 }
 
 @customElement("ph-vault")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-intersect": PhIntersect;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-intersect": PhIntersect;
+    }
+  }
 }
 
 @customElement("ph-intersect")

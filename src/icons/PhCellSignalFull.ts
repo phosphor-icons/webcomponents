@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-cell-signal-full": PhCellSignalFull;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-cell-signal-full": PhCellSignalFull;
+    }
+  }
 }
 
 @customElement("ph-cell-signal-full")

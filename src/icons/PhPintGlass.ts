@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pint-glass": PhPintGlass;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pint-glass": PhPintGlass;
+    }
+  }
 }
 
 @customElement("ph-pint-glass")

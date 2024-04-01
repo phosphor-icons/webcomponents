@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-suitcase-rolling": PhSuitcaseRolling;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-suitcase-rolling": PhSuitcaseRolling;
+    }
+  }
 }
 
 @customElement("ph-suitcase-rolling")

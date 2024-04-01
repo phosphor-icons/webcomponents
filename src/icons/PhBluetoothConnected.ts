@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bluetooth-connected": PhBluetoothConnected;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bluetooth-connected": PhBluetoothConnected;
+    }
+  }
 }
 
 @customElement("ph-bluetooth-connected")

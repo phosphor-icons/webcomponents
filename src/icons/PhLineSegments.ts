@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-line-segments": PhLineSegments;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-line-segments": PhLineSegments;
+    }
+  }
 }
 
 @customElement("ph-line-segments")

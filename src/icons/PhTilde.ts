@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-tilde": PhTilde;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-tilde": PhTilde;
+    }
+  }
 }
 
 @customElement("ph-tilde")

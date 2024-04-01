@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-warning-octagon": PhWarningOctagon;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-warning-octagon": PhWarningOctagon;
+    }
+  }
 }
 
 @customElement("ph-warning-octagon")

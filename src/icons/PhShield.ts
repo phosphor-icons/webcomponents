@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shield": PhShield;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shield": PhShield;
+    }
+  }
 }
 
 @customElement("ph-shield")

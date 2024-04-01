@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-jar-label": PhJarLabel;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-jar-label": PhJarLabel;
+    }
+  }
 }
 
 @customElement("ph-jar-label")

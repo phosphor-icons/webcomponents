@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-patreon-logo": PhPatreonLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-patreon-logo": PhPatreonLogo;
+    }
+  }
 }
 
 @customElement("ph-patreon-logo")

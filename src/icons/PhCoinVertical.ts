@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-coin-vertical": PhCoinVertical;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-coin-vertical": PhCoinVertical;
+    }
+  }
 }
 
 @customElement("ph-coin-vertical")

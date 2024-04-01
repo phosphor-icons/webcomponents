@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-microsoft-outlook-logo": PhMicrosoftOutlookLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-microsoft-outlook-logo": PhMicrosoftOutlookLogo;
+    }
+  }
 }
 
 @customElement("ph-microsoft-outlook-logo")

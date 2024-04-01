@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sun-horizon": PhSunHorizon;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sun-horizon": PhSunHorizon;
+    }
+  }
 }
 
 @customElement("ph-sun-horizon")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-caret-double-down": PhCaretDoubleDown;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-caret-double-down": PhCaretDoubleDown;
+    }
+  }
 }
 
 @customElement("ph-caret-double-down")

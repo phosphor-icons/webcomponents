@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-path": PhPath;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-path": PhPath;
+    }
+  }
 }
 
 @customElement("ph-path")

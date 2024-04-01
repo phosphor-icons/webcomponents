@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-tote-simple": PhToteSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-tote-simple": PhToteSimple;
+    }
+  }
 }
 
 @customElement("ph-tote-simple")

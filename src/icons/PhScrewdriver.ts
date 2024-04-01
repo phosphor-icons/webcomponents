@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-screwdriver": PhScrewdriver;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-screwdriver": PhScrewdriver;
+    }
+  }
 }
 
 @customElement("ph-screwdriver")

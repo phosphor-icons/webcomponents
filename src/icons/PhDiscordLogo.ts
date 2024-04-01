@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-discord-logo": PhDiscordLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-discord-logo": PhDiscordLogo;
+    }
+  }
 }
 
 @customElement("ph-discord-logo")

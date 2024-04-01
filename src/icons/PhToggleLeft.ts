@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-toggle-left": PhToggleLeft;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-toggle-left": PhToggleLeft;
+    }
+  }
 }
 
 @customElement("ph-toggle-left")

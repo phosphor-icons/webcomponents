@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-magnet-straight": PhMagnetStraight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-magnet-straight": PhMagnetStraight;
+    }
+  }
 }
 
 @customElement("ph-magnet-straight")

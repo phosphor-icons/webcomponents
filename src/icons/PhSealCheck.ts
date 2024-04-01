@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-seal-check": PhSealCheck;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-seal-check": PhSealCheck;
+    }
+  }
 }
 
 @customElement("ph-seal-check")

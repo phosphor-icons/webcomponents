@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-upload-simple": PhUploadSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-upload-simple": PhUploadSimple;
+    }
+  }
 }
 
 @customElement("ph-upload-simple")

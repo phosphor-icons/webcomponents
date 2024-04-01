@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-umbrella": PhUmbrella;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-umbrella": PhUmbrella;
+    }
+  }
 }
 
 @customElement("ph-umbrella")

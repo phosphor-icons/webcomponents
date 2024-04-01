@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-microsoft-teams-logo": PhMicrosoftTeamsLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-microsoft-teams-logo": PhMicrosoftTeamsLogo;
+    }
+  }
 }
 
 @customElement("ph-microsoft-teams-logo")

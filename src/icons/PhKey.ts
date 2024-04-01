@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-key": PhKey;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-key": PhKey;
+    }
+  }
 }
 
 @customElement("ph-key")

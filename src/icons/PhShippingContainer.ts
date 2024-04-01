@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shipping-container": PhShippingContainer;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shipping-container": PhShippingContainer;
+    }
+  }
 }
 
 @customElement("ph-shipping-container")

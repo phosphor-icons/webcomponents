@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-vector-two": PhVectorTwo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-vector-two": PhVectorTwo;
+    }
+  }
 }
 
 @customElement("ph-vector-two")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-reddit-logo": PhRedditLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-reddit-logo": PhRedditLogo;
+    }
+  }
 }
 
 @customElement("ph-reddit-logo")

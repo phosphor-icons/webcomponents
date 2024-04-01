@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-escalator-down": PhEscalatorDown;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-escalator-down": PhEscalatorDown;
+    }
+  }
 }
 
 @customElement("ph-escalator-down")

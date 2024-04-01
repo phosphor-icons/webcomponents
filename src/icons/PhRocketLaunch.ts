@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-rocket-launch": PhRocketLaunch;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-rocket-launch": PhRocketLaunch;
+    }
+  }
 }
 
 @customElement("ph-rocket-launch")

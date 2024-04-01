@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-faders-horizontal": PhFadersHorizontal;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-faders-horizontal": PhFadersHorizontal;
+    }
+  }
 }
 
 @customElement("ph-faders-horizontal")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-device-rotate": PhDeviceRotate;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-device-rotate": PhDeviceRotate;
+    }
+  }
 }
 
 @customElement("ph-device-rotate")

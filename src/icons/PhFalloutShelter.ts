@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-fallout-shelter": PhFalloutShelter;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-fallout-shelter": PhFalloutShelter;
+    }
+  }
 }
 
 @customElement("ph-fallout-shelter")

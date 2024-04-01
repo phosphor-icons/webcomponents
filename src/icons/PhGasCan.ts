@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-gas-can": PhGasCan;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-gas-can": PhGasCan;
+    }
+  }
 }
 
 @customElement("ph-gas-can")

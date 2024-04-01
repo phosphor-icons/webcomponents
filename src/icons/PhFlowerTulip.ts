@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-flower-tulip": PhFlowerTulip;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-flower-tulip": PhFlowerTulip;
+    }
+  }
 }
 
 @customElement("ph-flower-tulip")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-arrows-merge": PhArrowsMerge;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-arrows-merge": PhArrowsMerge;
+    }
+  }
 }
 
 @customElement("ph-arrows-merge")

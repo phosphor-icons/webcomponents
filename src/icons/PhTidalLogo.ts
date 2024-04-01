@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-tidal-logo": PhTidalLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-tidal-logo": PhTidalLogo;
+    }
+  }
 }
 
 @customElement("ph-tidal-logo")

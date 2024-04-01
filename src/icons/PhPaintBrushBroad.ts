@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paint-brush-broad": PhPaintBrushBroad;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paint-brush-broad": PhPaintBrushBroad;
+    }
+  }
 }
 
 @customElement("ph-paint-brush-broad")

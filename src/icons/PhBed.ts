@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bed": PhBed;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bed": PhBed;
+    }
+  }
 }
 
 @customElement("ph-bed")

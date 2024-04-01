@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-hammer": PhHammer;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-hammer": PhHammer;
+    }
+  }
 }
 
 @customElement("ph-hammer")

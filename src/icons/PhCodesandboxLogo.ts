@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-codesandbox-logo": PhCodesandboxLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-codesandbox-logo": PhCodesandboxLogo;
+    }
+  }
 }
 
 @customElement("ph-codesandbox-logo")

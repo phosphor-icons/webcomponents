@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-air-traffic-control": PhAirTrafficControl;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-air-traffic-control": PhAirTrafficControl;
+    }
+  }
 }
 
 @customElement("ph-air-traffic-control")

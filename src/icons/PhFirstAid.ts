@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-first-aid": PhFirstAid;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-first-aid": PhFirstAid;
+    }
+  }
 }
 
 @customElement("ph-first-aid")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paw-print": PhPawPrint;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paw-print": PhPawPrint;
+    }
+  }
 }
 
 @customElement("ph-paw-print")

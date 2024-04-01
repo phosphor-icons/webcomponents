@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paint-roller": PhPaintRoller;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paint-roller": PhPaintRoller;
+    }
+  }
 }
 
 @customElement("ph-paint-roller")

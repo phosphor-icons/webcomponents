@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-washing-machine": PhWashingMachine;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-washing-machine": PhWashingMachine;
+    }
+  }
 }
 
 @customElement("ph-washing-machine")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-microsoft-excel-logo": PhMicrosoftExcelLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-microsoft-excel-logo": PhMicrosoftExcelLogo;
+    }
+  }
 }
 
 @customElement("ph-microsoft-excel-logo")

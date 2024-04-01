@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-sign-out": PhSignOut;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-sign-out": PhSignOut;
+    }
+  }
 }
 
 @customElement("ph-sign-out")

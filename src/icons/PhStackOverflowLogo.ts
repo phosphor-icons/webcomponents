@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-stack-overflow-logo": PhStackOverflowLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-stack-overflow-logo": PhStackOverflowLogo;
+    }
+  }
 }
 
 @customElement("ph-stack-overflow-logo")

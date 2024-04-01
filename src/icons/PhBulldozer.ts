@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-bulldozer": PhBulldozer;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-bulldozer": PhBulldozer;
+    }
+  }
 }
 
 @customElement("ph-bulldozer")

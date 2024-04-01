@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-crown-simple": PhCrownSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-crown-simple": PhCrownSimple;
+    }
+  }
 }
 
 @customElement("ph-crown-simple")

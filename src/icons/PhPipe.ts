@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pipe": PhPipe;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pipe": PhPipe;
+    }
+  }
 }
 
 @customElement("ph-pipe")

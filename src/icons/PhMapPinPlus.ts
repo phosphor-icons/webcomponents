@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-map-pin-plus": PhMapPinPlus;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-map-pin-plus": PhMapPinPlus;
+    }
+  }
 }
 
 @customElement("ph-map-pin-plus")

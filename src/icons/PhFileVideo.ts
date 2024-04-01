@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-file-video": PhFileVideo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-file-video": PhFileVideo;
+    }
+  }
 }
 
 @customElement("ph-file-video")

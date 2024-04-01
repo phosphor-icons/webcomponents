@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-less-than-or-equal": PhLessThanOrEqual;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-less-than-or-equal": PhLessThanOrEqual;
+    }
+  }
 }
 
 @customElement("ph-less-than-or-equal")

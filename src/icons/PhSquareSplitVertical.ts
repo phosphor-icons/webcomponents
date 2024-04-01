@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-square-split-vertical": PhSquareSplitVertical;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-square-split-vertical": PhSquareSplitVertical;
+    }
+  }
 }
 
 @customElement("ph-square-split-vertical")

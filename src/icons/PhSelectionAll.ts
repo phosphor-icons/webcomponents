@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-selection-all": PhSelectionAll;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-selection-all": PhSelectionAll;
+    }
+  }
 }
 
 @customElement("ph-selection-all")

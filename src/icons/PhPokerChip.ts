@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-poker-chip": PhPokerChip;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-poker-chip": PhPokerChip;
+    }
+  }
 }
 
 @customElement("ph-poker-chip")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-traffic-cone": PhTrafficCone;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-traffic-cone": PhTrafficCone;
+    }
+  }
 }
 
 @customElement("ph-traffic-cone")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-shopping-bag-open": PhShoppingBagOpen;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-shopping-bag-open": PhShoppingBagOpen;
+    }
+  }
 }
 
 @customElement("ph-shopping-bag-open")

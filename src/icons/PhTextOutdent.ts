@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-text-outdent": PhTextOutdent;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-text-outdent": PhTextOutdent;
+    }
+  }
 }
 
 @customElement("ph-text-outdent")

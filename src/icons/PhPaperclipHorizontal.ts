@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paperclip-horizontal": PhPaperclipHorizontal;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paperclip-horizontal": PhPaperclipHorizontal;
+    }
+  }
 }
 
 @customElement("ph-paperclip-horizontal")

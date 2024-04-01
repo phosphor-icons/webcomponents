@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-microsoft-word-logo": PhMicrosoftWordLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-microsoft-word-logo": PhMicrosoftWordLogo;
+    }
+  }
 }
 
 @customElement("ph-microsoft-word-logo")

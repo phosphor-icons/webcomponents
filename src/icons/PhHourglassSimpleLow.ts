@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-hourglass-simple-low": PhHourglassSimpleLow;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-hourglass-simple-low": PhHourglassSimpleLow;
+    }
+  }
 }
 
 @customElement("ph-hourglass-simple-low")

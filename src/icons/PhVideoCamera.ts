@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-video-camera": PhVideoCamera;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-video-camera": PhVideoCamera;
+    }
+  }
 }
 
 @customElement("ph-video-camera")

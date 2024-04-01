@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-brackets-angle": PhBracketsAngle;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-brackets-angle": PhBracketsAngle;
+    }
+  }
 }
 
 @customElement("ph-brackets-angle")

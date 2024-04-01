@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-faders": PhFaders;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-faders": PhFaders;
+    }
+  }
 }
 
 @customElement("ph-faders")

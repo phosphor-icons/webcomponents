@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-scribble": PhScribble;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-scribble": PhScribble;
+    }
+  }
 }
 
 @customElement("ph-scribble")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-eyedropper": PhEyedropper;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-eyedropper": PhEyedropper;
+    }
+  }
 }
 
 @customElement("ph-eyedropper")

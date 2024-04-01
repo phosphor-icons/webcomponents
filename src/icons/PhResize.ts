@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-resize": PhResize;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-resize": PhResize;
+    }
+  }
 }
 
 @customElement("ph-resize")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-folder-dashed": PhFolderDashed;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-folder-dashed": PhFolderDashed;
+    }
+  }
 }
 
 @customElement("ph-folder-dashed")

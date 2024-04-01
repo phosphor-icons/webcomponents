@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-repeat-once": PhRepeatOnce;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-repeat-once": PhRepeatOnce;
+    }
+  }
 }
 
 @customElement("ph-repeat-once")

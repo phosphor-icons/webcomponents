@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-crosshair": PhCrosshair;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-crosshair": PhCrosshair;
+    }
+  }
 }
 
 @customElement("ph-crosshair")

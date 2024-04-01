@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-whatsapp-logo": PhWhatsappLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-whatsapp-logo": PhWhatsappLogo;
+    }
+  }
 }
 
 @customElement("ph-whatsapp-logo")

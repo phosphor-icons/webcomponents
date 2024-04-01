@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-magic-wand": PhMagicWand;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-magic-wand": PhMagicWand;
+    }
+  }
 }
 
 @customElement("ph-magic-wand")

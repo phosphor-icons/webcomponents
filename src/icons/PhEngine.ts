@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-engine": PhEngine;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-engine": PhEngine;
+    }
+  }
 }
 
 @customElement("ph-engine")

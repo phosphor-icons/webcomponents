@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-barricade": PhBarricade;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-barricade": PhBarricade;
+    }
+  }
 }
 
 @customElement("ph-barricade")

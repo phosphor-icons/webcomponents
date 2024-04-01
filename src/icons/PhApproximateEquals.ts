@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-approximate-equals": PhApproximateEquals;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-approximate-equals": PhApproximateEquals;
+    }
+  }
 }
 
 @customElement("ph-approximate-equals")

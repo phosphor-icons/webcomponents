@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-pencil-line": PhPencilLine;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-pencil-line": PhPencilLine;
+    }
+  }
 }
 
 @customElement("ph-pencil-line")

@@ -16,24 +16,26 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 To add Phosphor web components to your app via CDN, you can include the following in the `<head>` of the document:
 
 ```html
-<script type="module" src="https://unpkg.com/@phosphor-icons/webcomponents@2.1"></script>
+<script
+  type="module"
+  src="https://unpkg.com/@phosphor-icons/webcomponents@2.1"
+></script>
 ```
 
 To use within ES modules, install the package and import once near the root of your app:
 
 ```bash
-yarn add @phosphor-icons/webcomponents
+pnpm add @phosphor-icons/webcomponents
+#^ Or whatever package manager you use
 ```
 
-or
-
-```bash
-npm install --save @phosphor-icons/webcomponents
-```
-
-Then
+Then import either just the icons you need, or the entire library (this can be quite large):
 
 ```ts
+import "@phoshpor-icons/webcomponents/PhHorse";
+import "@phoshpor-icons/webcomponents/PhHeart";
+import "@phoshpor-icons/webcomponents/PhCube";
+// OR IF YOU NEED ALL ICONS:
 import "@phosphor-icons/webcomponents";
 ```
 
@@ -83,4 +85,3 @@ If you've made a port of Phosphor and you want to see it here, just open a PR [h
 ## License
 
 MIT © [Phosphor Icons](https://github.com/phosphor-icons)
-

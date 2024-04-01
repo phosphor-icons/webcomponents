@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-briefcase": PhBriefcase;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-briefcase": PhBriefcase;
+    }
+  }
 }
 
 @customElement("ph-briefcase")

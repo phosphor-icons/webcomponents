@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-towel": PhTowel;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-towel": PhTowel;
+    }
+  }
 }
 
 @customElement("ph-towel")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-twitch-logo": PhTwitchLogo;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-twitch-logo": PhTwitchLogo;
+    }
+  }
 }
 
 @customElement("ph-twitch-logo")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-memory": PhMemory;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-memory": PhMemory;
+    }
+  }
 }
 
 @customElement("ph-memory")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-file-magnifying-glass": PhFileMagnifyingGlass;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-file-magnifying-glass": PhFileMagnifyingGlass;
+    }
+  }
 }
 
 @customElement("ph-file-magnifying-glass")

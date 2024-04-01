@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-road-horizon": PhRoadHorizon;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-road-horizon": PhRoadHorizon;
+    }
+  }
 }
 
 @customElement("ph-road-horizon")

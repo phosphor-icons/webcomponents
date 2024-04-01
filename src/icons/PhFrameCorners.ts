@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-frame-corners": PhFrameCorners;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-frame-corners": PhFrameCorners;
+    }
+  }
 }
 
 @customElement("ph-frame-corners")

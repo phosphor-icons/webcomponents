@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-heart-straight": PhHeartStraight;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-heart-straight": PhHeartStraight;
+    }
+  }
 }
 
 @customElement("ph-heart-straight")

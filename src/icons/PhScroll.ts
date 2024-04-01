@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-scroll": PhScroll;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-scroll": PhScroll;
+    }
+  }
 }
 
 @customElement("ph-scroll")

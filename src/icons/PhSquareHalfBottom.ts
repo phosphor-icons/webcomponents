@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-square-half-bottom": PhSquareHalfBottom;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-square-half-bottom": PhSquareHalfBottom;
+    }
+  }
 }
 
 @customElement("ph-square-half-bottom")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-anchor-simple": PhAnchorSimple;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-anchor-simple": PhAnchorSimple;
+    }
+  }
 }
 
 @customElement("ph-anchor-simple")

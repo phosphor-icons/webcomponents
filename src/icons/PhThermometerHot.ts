@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-thermometer-hot": PhThermometerHot;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-thermometer-hot": PhThermometerHot;
+    }
+  }
 }
 
 @customElement("ph-thermometer-hot")

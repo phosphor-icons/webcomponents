@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-paint-brush-household": PhPaintBrushHousehold;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-paint-brush-household": PhPaintBrushHousehold;
+    }
+  }
 }
 
 @customElement("ph-paint-brush-household")

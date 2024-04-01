@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-corners-in": PhCornersIn;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-corners-in": PhCornersIn;
+    }
+  }
 }
 
 @customElement("ph-corners-in")

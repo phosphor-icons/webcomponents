@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-boot": PhBoot;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-boot": PhBoot;
+    }
+  }
 }
 
 @customElement("ph-boot")

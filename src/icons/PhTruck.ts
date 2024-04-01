@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-truck": PhTruck;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-truck": PhTruck;
+    }
+  }
 }
 
 @customElement("ph-truck")

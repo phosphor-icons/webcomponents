@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-vibrate": PhVibrate;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-vibrate": PhVibrate;
+    }
+  }
 }
 
 @customElement("ph-vibrate")

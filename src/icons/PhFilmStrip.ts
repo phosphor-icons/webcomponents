@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-film-strip": PhFilmStrip;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-film-strip": PhFilmStrip;
+    }
+  }
 }
 
 @customElement("ph-film-strip")

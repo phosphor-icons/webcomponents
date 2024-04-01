@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-mosque": PhMosque;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-mosque": PhMosque;
+    }
+  }
 }
 
 @customElement("ph-mosque")

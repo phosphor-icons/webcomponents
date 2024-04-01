@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-gear-fine": PhGearFine;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-gear-fine": PhGearFine;
+    }
+  }
 }
 
 @customElement("ph-gear-fine")

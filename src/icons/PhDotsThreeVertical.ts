@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-dots-three-vertical": PhDotsThreeVertical;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-dots-three-vertical": PhDotsThreeVertical;
+    }
+  }
 }
 
 @customElement("ph-dots-three-vertical")

@@ -8,6 +8,11 @@ declare global {
   interface HTMLElementTagNameMap {
     "ph-trash": PhTrash;
   }
+  namespace JSX {
+    interface IntrinsicElements {
+      "ph-trash": PhTrash;
+    }
+  }
 }
 
 @customElement("ph-trash")
