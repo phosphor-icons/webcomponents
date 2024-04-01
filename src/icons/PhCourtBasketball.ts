@@ -45,16 +45,16 @@ class PhCourtBasketball extends LitElement {
   ]);
 
   @property({ type: String })
-  size: string | number = "1em";
+  size?: string | number = "1em";
 
   @property({ type: String })
-  weight: IconWeight = "regular";
+  weight?: IconWeight = "regular";
 
   @property({ type: String })
-  color: string = "currentColor";
+  color?: string = "currentColor";
 
   @property({ type: Boolean })
-  mirrored: boolean = false;
+  mirrored?: boolean = false;
 
   render() {
     return html`<svg
@@ -66,7 +66,7 @@ class PhCourtBasketball extends LitElement {
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
       <slot></slot>
-      ${PhCourtBasketball.weightsMap.get(this.weight)}
+      ${PhCourtBasketball.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }
 }
