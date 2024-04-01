@@ -1,7 +1,11 @@
-import path from "node:path";
 import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import chalk from "chalk";
 import { IconStyle, icons } from "../core/src";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export const EXAMPLE_PATH = path.join(__dirname, "../index.html");
 export const ASSETS_PATH = path.join(__dirname, "../core/assets");
@@ -19,12 +23,14 @@ export const ALIASES = icons.reduce<Record<string, string>>((acc, curr) => {
 export type AssetMap = Record<string, Record<IconStyle, string>>;
 
 export function readAssetsFromDisk(): AssetMap {
+  console.log(ASSETS_PATH);
   const assetsFolder = fs.readdirSync(ASSETS_PATH, "utf-8");
 
   const icons: AssetMap = {};
 
   assetsFolder.forEach((weight) => {
-    if (!fs.lstatSync(path.join(ASSETS_PATH, weight)).isDirectory()) return;
+    if (!fs.lstatSync(path.join(ASSETS_PATH, `./${weight}`)).isDirectory())
+      return;
 
     if (!WEIGHTS.includes(weight as IconStyle)) {
       console.error(`${chalk.inverse.red(" ERR ")} Bad folder name ${weight}`);
