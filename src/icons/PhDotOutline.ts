@@ -1,5 +1,5 @@
 /* GENERATED FILE */
-import { html, svg, LitElement } from "lit";
+import { html, svg, css, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
 import type { IconWeight, IconAttrs } from "../types";
@@ -66,6 +66,12 @@ class PhDotOutline extends LitElement {
       ${PhDotOutline.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }
+
+  static styles = css`
+    :host {
+      display: contents;
+    }
+  `;
 }
 
 export { PhDotOutline };
