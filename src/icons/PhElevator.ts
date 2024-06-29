@@ -65,7 +65,6 @@ class PhElevator extends LitElement {
       viewBox="0 0 256 256"
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${PhElevator.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }

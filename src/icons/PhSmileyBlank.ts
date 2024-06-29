@@ -65,7 +65,6 @@ class PhSmileyBlank extends LitElement {
       viewBox="0 0 256 256"
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${PhSmileyBlank.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }

@@ -65,7 +65,6 @@ class PhNotepad extends LitElement {
       viewBox="0 0 256 256"
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${PhNotepad.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }
