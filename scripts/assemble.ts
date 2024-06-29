@@ -49,7 +49,7 @@ function generateComponents(icons: AssetMap) {
   let fails = 0;
 
   if (fs.existsSync(COMPONENTS_PATH)) {
-    fs.rmdirSync(COMPONENTS_PATH, { recursive: true });
+    fs.rmSync(COMPONENTS_PATH, { recursive: true });
   }
   fs.mkdirSync(COMPONENTS_PATH);
 
@@ -107,7 +107,6 @@ class Ph${name} extends LitElement {
       viewBox="0 0 256 256"
       transform=\${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       \${Ph${name}.weightsMap.get(this.weight ?? "regular")}
     </svg>\`;
   }

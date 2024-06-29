@@ -65,7 +65,6 @@ class PhMotorcycle extends LitElement {
       viewBox="0 0 256 256"
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${PhMotorcycle.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }

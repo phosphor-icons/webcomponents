@@ -65,7 +65,6 @@ class PhGoogleLogo extends LitElement {
       viewBox="0 0 256 256"
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${PhGoogleLogo.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }

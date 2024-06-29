@@ -65,7 +65,6 @@ class PhPicnicTable extends LitElement {
       viewBox="0 0 256 256"
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${PhPicnicTable.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }

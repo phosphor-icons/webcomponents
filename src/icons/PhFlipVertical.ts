@@ -65,7 +65,6 @@ class PhFlipVertical extends LitElement {
       viewBox="0 0 256 256"
       transform=${this.mirrored ? "scale(-1, 1)" : null}
     >
-      <slot></slot>
       ${PhFlipVertical.weightsMap.get(this.weight ?? "regular")}
     </svg>`;
   }
