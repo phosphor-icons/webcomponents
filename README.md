@@ -32,9 +32,9 @@ pnpm add @phosphor-icons/webcomponents
 Then import either just the icons you need, or the entire library (this can be quite large):
 
 ```ts
-import "@phoshpor-icons/webcomponents/PhHorse";
-import "@phoshpor-icons/webcomponents/PhHeart";
-import "@phoshpor-icons/webcomponents/PhCube";
+import "@phosphor-icons/webcomponents/PhHorse";
+import "@phosphor-icons/webcomponents/PhHeart";
+import "@phosphor-icons/webcomponents/PhCube";
 // OR IF YOU NEED ALL ICONS:
 import "@phosphor-icons/webcomponents";
 ```
