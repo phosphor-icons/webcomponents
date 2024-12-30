@@ -1,6 +1,8 @@
-<img src="/meta/phosphor-mark-tight-black.png" width="128" align="right" />
-
 # @phosphor-icons/webcomponents
+
+<!-- BEGIN_LOGO -->
+<img src="/meta/phosphor-mark-tight-black.png" width="128" align="right" />
+<!-- END_LOGO -->
 
 Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really. Explore all our icons at [phosphoricons.com](https://phosphoricons.com).
 
